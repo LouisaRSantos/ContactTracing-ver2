@@ -39,7 +39,7 @@
             this.TxtBoxFN = new System.Windows.Forms.TextBox();
             this.TxtBoxMN = new System.Windows.Forms.TextBox();
             this.TxtBoxSN = new System.Windows.Forms.TextBox();
-            this.TxtBoxSufix = new System.Windows.Forms.TextBox();
+            this.TxtBoxSuffix = new System.Windows.Forms.TextBox();
             this.CTlabelNameFN = new System.Windows.Forms.Label();
             this.CTlabelNameSuffix = new System.Windows.Forms.Label();
             this.CTlabelNameSN = new System.Windows.Forms.Label();
@@ -250,12 +250,12 @@
             this.TxtBoxSN.Size = new System.Drawing.Size(129, 20);
             this.TxtBoxSN.TabIndex = 12;
             // 
-            // TxtBoxSufix
+            // TxtBoxSuffix
             // 
-            this.TxtBoxSufix.Location = new System.Drawing.Point(547, 148);
-            this.TxtBoxSufix.Name = "TxtBoxSufix";
-            this.TxtBoxSufix.Size = new System.Drawing.Size(78, 20);
-            this.TxtBoxSufix.TabIndex = 13;
+            this.TxtBoxSuffix.Location = new System.Drawing.Point(547, 148);
+            this.TxtBoxSuffix.Name = "TxtBoxSuffix";
+            this.TxtBoxSuffix.Size = new System.Drawing.Size(78, 20);
+            this.TxtBoxSuffix.TabIndex = 13;
             // 
             // CTlabelNameFN
             // 
@@ -1268,6 +1268,7 @@
             this.CTbtnClear.TabIndex = 242;
             this.CTbtnClear.Text = "Clear";
             this.CTbtnClear.UseVisualStyleBackColor = true;
+            this.CTbtnClear.Click += new System.EventHandler(this.CTbtnClear_Click);
             // 
             // CTbtnSave
             // 
@@ -1676,7 +1677,7 @@
             this.Controls.Add(this.CTlabelNameSN);
             this.Controls.Add(this.CTlabelNameMN);
             this.Controls.Add(this.CTlabelNameFN);
-            this.Controls.Add(this.TxtBoxSufix);
+            this.Controls.Add(this.TxtBoxSuffix);
             this.Controls.Add(this.TxtBoxSN);
             this.Controls.Add(this.TxtBoxMN);
             this.Controls.Add(this.TxtBoxFN);
@@ -1707,7 +1708,7 @@
         private System.Windows.Forms.TextBox TxtBoxFN;
         private System.Windows.Forms.TextBox TxtBoxMN;
         private System.Windows.Forms.TextBox TxtBoxSN;
-        private System.Windows.Forms.TextBox TxtBoxSufix;
+        private System.Windows.Forms.TextBox TxtBoxSuffix;
         private System.Windows.Forms.Label CTlabelNameFN;
         private System.Windows.Forms.Label CTlabelNameSuffix;
         private System.Windows.Forms.Label CTlabelNameSN;
