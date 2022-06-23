@@ -135,7 +135,7 @@
             this.CTlabelAbout5 = new System.Windows.Forms.Label();
             this.CTbtnClear = new System.Windows.Forms.Button();
             this.CTbtnSave = new System.Windows.Forms.Button();
-            this.CTlabel7 = new System.Windows.Forms.Label();
+            this.CTlabelAbout7 = new System.Windows.Forms.Label();
             this.CTcboxDateM = new System.Windows.Forms.ComboBox();
             this.CTcboxDateD = new System.Windows.Forms.ComboBox();
             this.CTcboxDateY = new System.Windows.Forms.ComboBox();
@@ -155,6 +155,12 @@
             this.CTlabelLoc5 = new System.Windows.Forms.Label();
             this.TxtBoxLoc4 = new System.Windows.Forms.TextBox();
             this.TxtBoxLoc5 = new System.Windows.Forms.TextBox();
+            this.CTrichtxtbox1 = new System.Windows.Forms.RichTextBox();
+            this.CTbtnFilter = new System.Windows.Forms.Button();
+            this.CTList2 = new System.Windows.Forms.ListBox();
+            this.TxtBoxDateFilter = new System.Windows.Forms.TextBox();
+            this.CTList1 = new System.Windows.Forms.ListBox();
+            this.CTbtnOpen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1280,18 +1286,19 @@
             this.CTbtnSave.UseVisualStyleBackColor = true;
             this.CTbtnSave.Click += new System.EventHandler(this.CTbtnSave_Click);
             // 
-            // CTlabel7
+            // CTlabelAbout7
             // 
-            this.CTlabel7.AutoSize = true;
-            this.CTlabel7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabel7.Location = new System.Drawing.Point(1054, 105);
-            this.CTlabel7.Name = "CTlabel7";
-            this.CTlabel7.Size = new System.Drawing.Size(43, 15);
-            this.CTlabel7.TabIndex = 243;
-            this.CTlabel7.Text = "Date: ";
+            this.CTlabelAbout7.AutoSize = true;
+            this.CTlabelAbout7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTlabelAbout7.Location = new System.Drawing.Point(1054, 105);
+            this.CTlabelAbout7.Name = "CTlabelAbout7";
+            this.CTlabelAbout7.Size = new System.Drawing.Size(43, 15);
+            this.CTlabelAbout7.TabIndex = 243;
+            this.CTlabelAbout7.Text = "Date: ";
             // 
             // CTcboxDateM
             // 
+            this.CTcboxDateM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CTcboxDateM.FormattingEnabled = true;
             this.CTcboxDateM.Items.AddRange(new object[] {
             "January",
@@ -1313,6 +1320,7 @@
             // 
             // CTcboxDateD
             // 
+            this.CTcboxDateD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CTcboxDateD.FormattingEnabled = true;
             this.CTcboxDateD.Items.AddRange(new object[] {
             "1",
@@ -1353,6 +1361,7 @@
             // 
             // CTcboxDateY
             // 
+            this.CTcboxDateY.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CTcboxDateY.FormattingEnabled = true;
             this.CTcboxDateY.Items.AddRange(new object[] {
             "1970",
@@ -1557,15 +1566,70 @@
             this.TxtBoxLoc5.Size = new System.Drawing.Size(161, 20);
             this.TxtBoxLoc5.TabIndex = 234;
             // 
+            // CTrichtxtbox1
+            // 
+            this.CTrichtxtbox1.Location = new System.Drawing.Point(1049, 444);
+            this.CTrichtxtbox1.Name = "CTrichtxtbox1";
+            this.CTrichtxtbox1.Size = new System.Drawing.Size(296, 245);
+            this.CTrichtxtbox1.TabIndex = 253;
+            this.CTrichtxtbox1.Text = "";
+            // 
+            // CTbtnFilter
+            // 
+            this.CTbtnFilter.Location = new System.Drawing.Point(856, 565);
+            this.CTbtnFilter.Name = "CTbtnFilter";
+            this.CTbtnFilter.Size = new System.Drawing.Size(58, 23);
+            this.CTbtnFilter.TabIndex = 251;
+            this.CTbtnFilter.Text = "Filter";
+            this.CTbtnFilter.UseVisualStyleBackColor = true;
+            // 
+            // CTList2
+            // 
+            this.CTList2.FormattingEnabled = true;
+            this.CTList2.Location = new System.Drawing.Point(687, 594);
+            this.CTList2.Name = "CTList2";
+            this.CTList2.Size = new System.Drawing.Size(227, 95);
+            this.CTList2.TabIndex = 250;
+            // 
+            // TxtBoxDateFilter
+            // 
+            this.TxtBoxDateFilter.Location = new System.Drawing.Point(769, 568);
+            this.TxtBoxDateFilter.Name = "TxtBoxDateFilter";
+            this.TxtBoxDateFilter.Size = new System.Drawing.Size(81, 20);
+            this.TxtBoxDateFilter.TabIndex = 249;
+            // 
+            // CTList1
+            // 
+            this.CTList1.FormattingEnabled = true;
+            this.CTList1.Location = new System.Drawing.Point(687, 444);
+            this.CTList1.Name = "CTList1";
+            this.CTList1.Size = new System.Drawing.Size(227, 95);
+            this.CTList1.TabIndex = 247;
+            // 
+            // CTbtnOpen
+            // 
+            this.CTbtnOpen.Location = new System.Drawing.Point(920, 664);
+            this.CTbtnOpen.Name = "CTbtnOpen";
+            this.CTbtnOpen.Size = new System.Drawing.Size(75, 25);
+            this.CTbtnOpen.TabIndex = 254;
+            this.CTbtnOpen.Text = "Open";
+            this.CTbtnOpen.UseVisualStyleBackColor = true;
+            // 
             // ContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.CTbtnOpen);
+            this.Controls.Add(this.CTrichtxtbox1);
+            this.Controls.Add(this.CTbtnFilter);
+            this.Controls.Add(this.CTList2);
+            this.Controls.Add(this.TxtBoxDateFilter);
+            this.Controls.Add(this.CTList1);
             this.Controls.Add(this.CTcboxDateY);
             this.Controls.Add(this.CTcboxDateD);
             this.Controls.Add(this.CTcboxDateM);
-            this.Controls.Add(this.CTlabel7);
+            this.Controls.Add(this.CTlabelAbout7);
             this.Controls.Add(this.CTbtnClear);
             this.Controls.Add(this.CTbtnSave);
             this.Controls.Add(this.CTlabelGuide4);
@@ -1804,7 +1868,7 @@
         private System.Windows.Forms.Label CTlabelAbout5;
         private System.Windows.Forms.Button CTbtnClear;
         private System.Windows.Forms.Button CTbtnSave;
-        private System.Windows.Forms.Label CTlabel7;
+        private System.Windows.Forms.Label CTlabelAbout7;
         private System.Windows.Forms.ComboBox CTcboxDateM;
         private System.Windows.Forms.ComboBox CTcboxDateD;
         private System.Windows.Forms.ComboBox CTcboxDateY;
@@ -1824,6 +1888,12 @@
         private System.Windows.Forms.Label CTlabelLoc5;
         private System.Windows.Forms.TextBox TxtBoxLoc4;
         private System.Windows.Forms.TextBox TxtBoxLoc5;
+        private System.Windows.Forms.RichTextBox CTrichtxtbox1;
+        private System.Windows.Forms.Button CTbtnFilter;
+        private System.Windows.Forms.ListBox CTList2;
+        private System.Windows.Forms.TextBox TxtBoxDateFilter;
+        private System.Windows.Forms.ListBox CTList1;
+        private System.Windows.Forms.Button CTbtnOpen;
     }
 }
 
