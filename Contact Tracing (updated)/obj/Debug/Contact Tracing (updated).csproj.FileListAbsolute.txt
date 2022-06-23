@@ -1,0 +1,1 @@
+c:\users\santos\documents\visual studio 2013\Projects\Contact Tracing (updated)\Contact Tracing (updated)\bin\Debug\Contact Tracing (updated).exe.config
