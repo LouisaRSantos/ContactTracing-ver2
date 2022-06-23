@@ -141,5 +141,37 @@ namespace Contact_Tracing__updated_
             CTcheckboxNo4.Checked = false;
             CTcheckboxIDK1.Checked = false;
         }
+
+        private void CTbtnFilter_Click(object sender, EventArgs e)
+        {
+            string Date_Find = TxtBoxDateFilter.Text;
+
+            string file_name = (@"C:\Users\Santos\Documents\New folder\" + Date_Find + ".txt");
+            try
+            {
+                if (Date_Find == "")
+                {
+                    MessageBox.Show("Please input date to filter");
+                }
+                else if (System.IO.File.Exists(file_name) == true)
+                {
+                    StreamReader filterContact = new StreamReader(@"C:\Users\Santos\Documents\New folder\" + Date_Find + ".txt", true);
+                    CTList2.Items.Add(filterContact.ReadLine());
+                }
+                else
+                {
+                    MessageBox.Show("No record");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error. Please try again.");
+            }
+        }
+
+        private void CTbtnOpen_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

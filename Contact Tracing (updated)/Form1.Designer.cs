@@ -1582,6 +1582,7 @@
             this.CTbtnFilter.TabIndex = 251;
             this.CTbtnFilter.Text = "Filter";
             this.CTbtnFilter.UseVisualStyleBackColor = true;
+            this.CTbtnFilter.Click += new System.EventHandler(this.CTbtnFilter_Click);
             // 
             // CTList2
             // 
@@ -1614,6 +1615,7 @@
             this.CTbtnOpen.TabIndex = 254;
             this.CTbtnOpen.Text = "Open";
             this.CTbtnOpen.UseVisualStyleBackColor = true;
+            this.CTbtnOpen.Click += new System.EventHandler(this.CTbtnOpen_Click);
             // 
             // ContactTracing
             // 
