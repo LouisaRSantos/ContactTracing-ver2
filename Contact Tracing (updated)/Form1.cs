@@ -49,10 +49,10 @@ namespace Contact_Tracing__updated_
                 }
                 else
                 {
-                    StreamWriter saveContact = new StreamWriter(@"C:\Users\Santos\Documents\New folder\" + Date + ".txt", true);
+                    StreamWriter saveContact = new StreamWriter(@"C:\Users\Santos\Documents\Records\" + Date + ".txt", true);
                     saveContact.WriteLine(Date + "\r\n" + "Name: " + Name + "\r\n" + "Age: " + Age + "\r\n" + "Birthday: " + Birthday + "\r\n" + "Sex: " + SexFM + "\r\n" + "Phone Number: " + PNumber + "\r\n" + "Email: " + Email + "\r\n" + "Birth Place: " + BirthPlace + "\r\n" + "Current Address: " + CurrentAdd + "\r\n");
-                    saveContact.WriteLine(MName + "\r\n" + MPNumber + "\r\n" + MCurrentAdd + "\r\n");
-                    saveContact.WriteLine(FName + "\r\n" + FPNumber + "\r\n" + FCurrentAdd + "\r\n");
+                    saveContact.WriteLine("Mother's Info:" + "\r\n" + "Name: " + MName + "\r\n" + "Phone Number: " + MPNumber + "\r\n" + "Current Address: " + MCurrentAdd + "\r\n");
+                    saveContact.WriteLine("Father's Info:" + "\r\n" + "Name: " + FName + "\r\n" + "Phone Number: " + FPNumber + "\r\n" + "Current Address: " + FCurrentAdd + "\r\n");
 
                     saveContact.WriteLine(CTlabelAbout3.Text + "\r\n" + "1. " + CTlabelQ1.Text + "- " + "\r\n" + "\t" + CTcheckboxYes1.Text + ": " + CTcheckboxYes1.Checked.ToString() + " " + CTcheckbocNo1.Text + ": " + CTcheckbocNo1.Checked.ToString() + "\r\n");
                     saveContact.WriteLine("2. " + CTlabelQ2.Text + "- " + "\r\n" + "\t" + CTcheckboxYes2.Text + ": " + CTcheckboxYes2.Checked.ToString() + " " + CTcheckboxNo2.Text + ": " + CTcheckboxNo2.Checked.ToString() + "\r\n");
@@ -63,7 +63,7 @@ namespace Contact_Tracing__updated_
                     saveContact.WriteLine("2. " + Person2);
                     saveContact.WriteLine("3. " + Person3);
                     saveContact.WriteLine("4. " + Person4);
-                    saveContact.WriteLine("5. " + Person5);
+                    saveContact.WriteLine("5. " + Person5 + "\r\n");
                     saveContact.Close();
 
                     MessageBox.Show("File Saved");
@@ -76,7 +76,7 @@ namespace Contact_Tracing__updated_
             try
             {
                 string Date = (CTcboxDateM.SelectedItem.ToString() + " " + CTcboxDateD.SelectedItem.ToString() + " " + CTcboxDateY.SelectedItem.ToString());
-                StreamReader readContact = new StreamReader(@"C:\Users\Santos\Documents\New folder\" + Date + ".txt");
+                StreamReader readContact = new StreamReader(@"C:\Users\Santos\Documents\Records\" + Date + ".txt");
                 CTList1.Items.Add(readContact.ReadLine());
                 readContact.Close();
             }
@@ -144,9 +144,10 @@ namespace Contact_Tracing__updated_
 
         private void CTbtnFilter_Click(object sender, EventArgs e)
         {
+            CTList2.Items.Clear();
             string Date_Find = TxtBoxDateFilter.Text;
 
-            string file_name = (@"C:\Users\Santos\Documents\New folder\" + Date_Find + ".txt");
+            string file_name = (@"C:\Users\Santos\Documents\Records\" + Date_Find + ".txt");
             try
             {
                 if (Date_Find == "")
@@ -155,7 +156,7 @@ namespace Contact_Tracing__updated_
                 }
                 else if (System.IO.File.Exists(file_name) == true)
                 {
-                    StreamReader filterContact = new StreamReader(@"C:\Users\Santos\Documents\New folder\" + Date_Find + ".txt", true);
+                    StreamReader filterContact = new StreamReader(@"C:\Users\Santos\Documents\Records\" + Date_Find + ".txt", true);
                     CTList2.Items.Add(filterContact.ReadLine());
                 }
                 else
@@ -174,7 +175,7 @@ namespace Contact_Tracing__updated_
             try
             {
                 string DateFilter = TxtBoxDateFilter.Text;
-                StreamReader readContact = new StreamReader(@"C:\Users\Santos\Documents\New folder\" + DateFilter + ".txt");
+                StreamReader readContact = new StreamReader(@"C:\Users\Santos\Documents\Records\" + DateFilter + ".txt");
                 while (!readContact.EndOfStream)
                 {
                     string line = readContact.ReadToEnd();

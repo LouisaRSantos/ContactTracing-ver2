@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactTracing));
             this.CTL1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CTpicbox1 = new System.Windows.Forms.PictureBox();
             this.CTL2 = new System.Windows.Forms.Label();
             this.CTAbout1 = new System.Windows.Forms.Label();
             this.CTlabelName = new System.Windows.Forms.Label();
@@ -73,7 +73,7 @@
             this.CTlabelMNameFN = new System.Windows.Forms.Label();
             this.CTlabelMother = new System.Windows.Forms.Label();
             this.CTlabelAbout2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.CTlabelFNameSuffix = new System.Windows.Forms.Label();
             this.TxtBoxFatherSuffix = new System.Windows.Forms.TextBox();
             this.TxtBoxFatherSN = new System.Windows.Forms.TextBox();
             this.TxtBoxFatherMN = new System.Windows.Forms.TextBox();
@@ -165,13 +165,14 @@
             this.CTasterterisk1 = new System.Windows.Forms.Label();
             this.CTlabelAbout8 = new System.Windows.Forms.Label();
             this.CTlabelAbout9 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.CTlabelAbout10 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.CTpicbox1)).BeginInit();
             this.SuspendLayout();
             // 
             // CTL1
             // 
             this.CTL1.AutoSize = true;
+            this.CTL1.BackColor = System.Drawing.Color.Transparent;
             this.CTL1.Font = new System.Drawing.Font("Franklin Gothic Book", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CTL1.Location = new System.Drawing.Point(135, 31);
             this.CTL1.Name = "CTL1";
@@ -179,20 +180,21 @@
             this.CTL1.TabIndex = 0;
             this.CTL1.Text = "COVID-19 Contract Tracing Form";
             // 
-            // pictureBox1
+            // CTpicbox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(108, 102);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.CTpicbox1.BackColor = System.Drawing.Color.Transparent;
+            this.CTpicbox1.Image = ((System.Drawing.Image)(resources.GetObject("CTpicbox1.Image")));
+            this.CTpicbox1.Location = new System.Drawing.Point(12, 12);
+            this.CTpicbox1.Name = "CTpicbox1";
+            this.CTpicbox1.Size = new System.Drawing.Size(108, 102);
+            this.CTpicbox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CTpicbox1.TabIndex = 1;
+            this.CTpicbox1.TabStop = false;
             // 
             // CTL2
             // 
             this.CTL2.AutoSize = true;
+            this.CTL2.BackColor = System.Drawing.Color.Transparent;
             this.CTL2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CTL2.Location = new System.Drawing.Point(139, 68);
             this.CTL2.Name = "CTL2";
@@ -203,6 +205,7 @@
             // CTAbout1
             // 
             this.CTAbout1.AutoSize = true;
+            this.CTAbout1.BackColor = System.Drawing.Color.Transparent;
             this.CTAbout1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CTAbout1.Location = new System.Drawing.Point(7, 127);
             this.CTAbout1.Name = "CTAbout1";
@@ -213,6 +216,7 @@
             // CTlabelName
             // 
             this.CTlabelName.AutoSize = true;
+            this.CTlabelName.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelName.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CTlabelName.Location = new System.Drawing.Point(81, 151);
             this.CTlabelName.Name = "CTlabelName";
@@ -223,6 +227,7 @@
             // CTlabelAge
             // 
             this.CTlabelAge.AutoSize = true;
+            this.CTlabelAge.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelAge.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CTlabelAge.Location = new System.Drawing.Point(96, 200);
             this.CTlabelAge.Name = "CTlabelAge";
@@ -233,6 +238,7 @@
             // CTlabelBirthday
             // 
             this.CTlabelBirthday.AutoSize = true;
+            this.CTlabelBirthday.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelBirthday.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CTlabelBirthday.Location = new System.Drawing.Point(201, 200);
             this.CTlabelBirthday.Name = "CTlabelBirthday";
@@ -685,16 +691,16 @@
             this.CTlabelAbout2.TabIndex = 75;
             this.CTlabelAbout2.Text = "About the guardian:";
             // 
-            // label1
+            // CTlabelFNameSuffix
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(582, 517);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 16);
-            this.label1.TabIndex = 101;
-            this.label1.Text = "Suffix";
+            this.CTlabelFNameSuffix.AutoSize = true;
+            this.CTlabelFNameSuffix.BackColor = System.Drawing.Color.Transparent;
+            this.CTlabelFNameSuffix.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTlabelFNameSuffix.Location = new System.Drawing.Point(582, 517);
+            this.CTlabelFNameSuffix.Name = "CTlabelFNameSuffix";
+            this.CTlabelFNameSuffix.Size = new System.Drawing.Size(38, 16);
+            this.CTlabelFNameSuffix.TabIndex = 101;
+            this.CTlabelFNameSuffix.Text = "Suffix";
             // 
             // TxtBoxFatherSuffix
             // 
@@ -1294,6 +1300,7 @@
             // CTlabelAbout7
             // 
             this.CTlabelAbout7.AutoSize = true;
+            this.CTlabelAbout7.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelAbout7.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CTlabelAbout7.Location = new System.Drawing.Point(1054, 105);
             this.CTlabelAbout7.Name = "CTlabelAbout7";
@@ -1660,6 +1667,7 @@
             // CTlabelAbout9
             // 
             this.CTlabelAbout9.AutoSize = true;
+            this.CTlabelAbout9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CTlabelAbout9.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CTlabelAbout9.Location = new System.Drawing.Point(661, 423);
             this.CTlabelAbout9.Name = "CTlabelAbout9";
@@ -1667,22 +1675,24 @@
             this.CTlabelAbout9.TabIndex = 258;
             this.CTlabelAbout9.Text = "List of all records";
             // 
-            // label2
+            // CTlabelAbout10
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(853, 423);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 16);
-            this.label2.TabIndex = 259;
-            this.label2.Text = "e.g. June 1 2022";
+            this.CTlabelAbout10.AutoSize = true;
+            this.CTlabelAbout10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.CTlabelAbout10.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTlabelAbout10.Location = new System.Drawing.Point(853, 423);
+            this.CTlabelAbout10.Name = "CTlabelAbout10";
+            this.CTlabelAbout10.Size = new System.Drawing.Size(94, 16);
+            this.CTlabelAbout10.TabIndex = 259;
+            this.CTlabelAbout10.Text = "e.g. June 1 2022";
             // 
             // ContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1362, 741);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.CTlabelAbout10);
             this.Controls.Add(this.CTlabelAbout9);
             this.Controls.Add(this.CTasterterisk2);
             this.Controls.Add(this.CTasterterisk1);
@@ -1760,7 +1770,7 @@
             this.Controls.Add(this.CTcheckboxYes1);
             this.Controls.Add(this.CTlabelQ1);
             this.Controls.Add(this.CTlabelAbout3);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CTlabelFNameSuffix);
             this.Controls.Add(this.TxtBoxFatherSuffix);
             this.Controls.Add(this.TxtBoxFatherSN);
             this.Controls.Add(this.TxtBoxFatherMN);
@@ -1817,11 +1827,11 @@
             this.Controls.Add(this.CTlabelName);
             this.Controls.Add(this.CTAbout1);
             this.Controls.Add(this.CTL2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.CTpicbox1);
             this.Controls.Add(this.CTL1);
             this.Name = "ContactTracing";
-            this.Text = "Contact Tracing";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Text = "Contact Tracing Form";
+            ((System.ComponentModel.ISupportInitialize)(this.CTpicbox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1830,7 +1840,7 @@
         #endregion
 
         private System.Windows.Forms.Label CTL1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox CTpicbox1;
         private System.Windows.Forms.Label CTL2;
         private System.Windows.Forms.Label CTAbout1;
         private System.Windows.Forms.Label CTlabelName;
@@ -1873,7 +1883,7 @@
         private System.Windows.Forms.Label CTlabelMNameFN;
         private System.Windows.Forms.Label CTlabelMother;
         private System.Windows.Forms.Label CTlabelAbout2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label CTlabelFNameSuffix;
         private System.Windows.Forms.TextBox TxtBoxFatherSuffix;
         private System.Windows.Forms.TextBox TxtBoxFatherSN;
         private System.Windows.Forms.TextBox TxtBoxFatherMN;
@@ -1965,7 +1975,7 @@
         private System.Windows.Forms.Label CTasterterisk1;
         private System.Windows.Forms.Label CTlabelAbout8;
         private System.Windows.Forms.Label CTlabelAbout9;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label CTlabelAbout10;
     }
 }
 
