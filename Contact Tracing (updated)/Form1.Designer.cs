@@ -1568,17 +1568,17 @@
             // 
             // CTrichtxtbox1
             // 
-            this.CTrichtxtbox1.Location = new System.Drawing.Point(1049, 444);
+            this.CTrichtxtbox1.Location = new System.Drawing.Point(1049, 423);
             this.CTrichtxtbox1.Name = "CTrichtxtbox1";
-            this.CTrichtxtbox1.Size = new System.Drawing.Size(296, 245);
+            this.CTrichtxtbox1.Size = new System.Drawing.Size(296, 266);
             this.CTrichtxtbox1.TabIndex = 253;
             this.CTrichtxtbox1.Text = "";
             // 
             // CTbtnFilter
             // 
-            this.CTbtnFilter.Location = new System.Drawing.Point(856, 565);
+            this.CTbtnFilter.Location = new System.Drawing.Point(949, 420);
             this.CTbtnFilter.Name = "CTbtnFilter";
-            this.CTbtnFilter.Size = new System.Drawing.Size(58, 23);
+            this.CTbtnFilter.Size = new System.Drawing.Size(75, 25);
             this.CTbtnFilter.TabIndex = 251;
             this.CTbtnFilter.Text = "Filter";
             this.CTbtnFilter.UseVisualStyleBackColor = true;
@@ -1587,14 +1587,14 @@
             // CTList2
             // 
             this.CTList2.FormattingEnabled = true;
-            this.CTList2.Location = new System.Drawing.Point(687, 594);
+            this.CTList2.Location = new System.Drawing.Point(856, 449);
             this.CTList2.Name = "CTList2";
-            this.CTList2.Size = new System.Drawing.Size(227, 95);
+            this.CTList2.Size = new System.Drawing.Size(168, 238);
             this.CTList2.TabIndex = 250;
             // 
             // TxtBoxDateFilter
             // 
-            this.TxtBoxDateFilter.Location = new System.Drawing.Point(769, 568);
+            this.TxtBoxDateFilter.Location = new System.Drawing.Point(856, 423);
             this.TxtBoxDateFilter.Name = "TxtBoxDateFilter";
             this.TxtBoxDateFilter.Size = new System.Drawing.Size(81, 20);
             this.TxtBoxDateFilter.TabIndex = 249;
@@ -1602,14 +1602,14 @@
             // CTList1
             // 
             this.CTList1.FormattingEnabled = true;
-            this.CTList1.Location = new System.Drawing.Point(687, 444);
+            this.CTList1.Location = new System.Drawing.Point(664, 423);
             this.CTList1.Name = "CTList1";
-            this.CTList1.Size = new System.Drawing.Size(227, 95);
+            this.CTList1.Size = new System.Drawing.Size(168, 264);
             this.CTList1.TabIndex = 247;
             // 
             // CTbtnOpen
             // 
-            this.CTbtnOpen.Location = new System.Drawing.Point(920, 664);
+            this.CTbtnOpen.Location = new System.Drawing.Point(1049, 695);
             this.CTbtnOpen.Name = "CTbtnOpen";
             this.CTbtnOpen.Size = new System.Drawing.Size(75, 25);
             this.CTbtnOpen.TabIndex = 254;
