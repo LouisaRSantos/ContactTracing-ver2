@@ -171,12 +171,19 @@ namespace Contact_Tracing__updated_
 
         private void CTbtnOpen_Click(object sender, EventArgs e)
         {
-            string DateFilter = TxtBoxDateFilter.Text;
-            StreamReader readContact = new StreamReader(@"C:\Users\Santos\Documents\New folder\" + DateFilter + ".txt");
-            while (!readContact.EndOfStream)
+            try
             {
-                string line = readContact.ReadToEnd();
-                CTrichtxtbox1.Text = line;
+                string DateFilter = TxtBoxDateFilter.Text;
+                StreamReader readContact = new StreamReader(@"C:\Users\Santos\Documents\New folder\" + DateFilter + ".txt");
+                while (!readContact.EndOfStream)
+                {
+                    string line = readContact.ReadToEnd();
+                    CTrichtxtbox1.Text = line;
+                }          
+            }
+            catch
+            {
+                MessageBox.Show("No file available");
             }
         }
     }

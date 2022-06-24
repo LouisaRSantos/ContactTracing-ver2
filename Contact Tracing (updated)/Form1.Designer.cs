@@ -161,6 +161,11 @@
             this.TxtBoxDateFilter = new System.Windows.Forms.TextBox();
             this.CTList1 = new System.Windows.Forms.ListBox();
             this.CTbtnOpen = new System.Windows.Forms.Button();
+            this.CTasterterisk2 = new System.Windows.Forms.Label();
+            this.CTasterterisk1 = new System.Windows.Forms.Label();
+            this.CTlabelAbout8 = new System.Windows.Forms.Label();
+            this.CTlabelAbout9 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -199,7 +204,7 @@
             // 
             this.CTAbout1.AutoSize = true;
             this.CTAbout1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTAbout1.Location = new System.Drawing.Point(12, 127);
+            this.CTAbout1.Location = new System.Drawing.Point(7, 127);
             this.CTAbout1.Name = "CTAbout1";
             this.CTAbout1.Size = new System.Drawing.Size(135, 15);
             this.CTAbout1.TabIndex = 3;
@@ -209,7 +214,7 @@
             // 
             this.CTlabelName.AutoSize = true;
             this.CTlabelName.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelName.Location = new System.Drawing.Point(86, 151);
+            this.CTlabelName.Location = new System.Drawing.Point(81, 151);
             this.CTlabelName.Name = "CTlabelName";
             this.CTlabelName.Size = new System.Drawing.Size(50, 17);
             this.CTlabelName.TabIndex = 4;
@@ -219,7 +224,7 @@
             // 
             this.CTlabelAge.AutoSize = true;
             this.CTlabelAge.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelAge.Location = new System.Drawing.Point(101, 200);
+            this.CTlabelAge.Location = new System.Drawing.Point(96, 200);
             this.CTlabelAge.Name = "CTlabelAge";
             this.CTlabelAge.Size = new System.Drawing.Size(35, 17);
             this.CTlabelAge.TabIndex = 5;
@@ -229,7 +234,7 @@
             // 
             this.CTlabelBirthday.AutoSize = true;
             this.CTlabelBirthday.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelBirthday.Location = new System.Drawing.Point(206, 200);
+            this.CTlabelBirthday.Location = new System.Drawing.Point(201, 200);
             this.CTlabelBirthday.Name = "CTlabelBirthday";
             this.CTlabelBirthday.Size = new System.Drawing.Size(94, 17);
             this.CTlabelBirthday.TabIndex = 7;
@@ -237,28 +242,28 @@
             // 
             // TxtBoxFN
             // 
-            this.TxtBoxFN.Location = new System.Drawing.Point(142, 148);
+            this.TxtBoxFN.Location = new System.Drawing.Point(137, 148);
             this.TxtBoxFN.Name = "TxtBoxFN";
             this.TxtBoxFN.Size = new System.Drawing.Size(129, 20);
             this.TxtBoxFN.TabIndex = 10;
             // 
             // TxtBoxMN
             // 
-            this.TxtBoxMN.Location = new System.Drawing.Point(277, 148);
+            this.TxtBoxMN.Location = new System.Drawing.Point(272, 148);
             this.TxtBoxMN.Name = "TxtBoxMN";
             this.TxtBoxMN.Size = new System.Drawing.Size(129, 20);
             this.TxtBoxMN.TabIndex = 11;
             // 
             // TxtBoxSN
             // 
-            this.TxtBoxSN.Location = new System.Drawing.Point(412, 148);
+            this.TxtBoxSN.Location = new System.Drawing.Point(407, 148);
             this.TxtBoxSN.Name = "TxtBoxSN";
             this.TxtBoxSN.Size = new System.Drawing.Size(129, 20);
             this.TxtBoxSN.TabIndex = 12;
             // 
             // TxtBoxSuffix
             // 
-            this.TxtBoxSuffix.Location = new System.Drawing.Point(547, 148);
+            this.TxtBoxSuffix.Location = new System.Drawing.Point(542, 148);
             this.TxtBoxSuffix.Name = "TxtBoxSuffix";
             this.TxtBoxSuffix.Size = new System.Drawing.Size(78, 20);
             this.TxtBoxSuffix.TabIndex = 13;
@@ -268,7 +273,7 @@
             this.CTlabelNameFN.AutoSize = true;
             this.CTlabelNameFN.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelNameFN.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelNameFN.Location = new System.Drawing.Point(207, 171);
+            this.CTlabelNameFN.Location = new System.Drawing.Point(202, 171);
             this.CTlabelNameFN.Name = "CTlabelNameFN";
             this.CTlabelNameFN.Size = new System.Drawing.Size(64, 16);
             this.CTlabelNameFN.TabIndex = 14;
@@ -279,7 +284,7 @@
             this.CTlabelNameSuffix.AutoSize = true;
             this.CTlabelNameSuffix.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelNameSuffix.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelNameSuffix.Location = new System.Drawing.Point(587, 171);
+            this.CTlabelNameSuffix.Location = new System.Drawing.Point(582, 171);
             this.CTlabelNameSuffix.Name = "CTlabelNameSuffix";
             this.CTlabelNameSuffix.Size = new System.Drawing.Size(38, 16);
             this.CTlabelNameSuffix.TabIndex = 57;
@@ -290,7 +295,7 @@
             this.CTlabelNameSN.AutoSize = true;
             this.CTlabelNameSN.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelNameSN.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelNameSN.Location = new System.Drawing.Point(486, 171);
+            this.CTlabelNameSN.Location = new System.Drawing.Point(481, 171);
             this.CTlabelNameSN.Name = "CTlabelNameSN";
             this.CTlabelNameSN.Size = new System.Drawing.Size(55, 16);
             this.CTlabelNameSN.TabIndex = 56;
@@ -301,7 +306,7 @@
             this.CTlabelNameMN.AutoSize = true;
             this.CTlabelNameMN.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelNameMN.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelNameMN.Location = new System.Drawing.Point(331, 171);
+            this.CTlabelNameMN.Location = new System.Drawing.Point(326, 171);
             this.CTlabelNameMN.Name = "CTlabelNameMN";
             this.CTlabelNameMN.Size = new System.Drawing.Size(75, 16);
             this.CTlabelNameMN.TabIndex = 55;
@@ -309,7 +314,7 @@
             // 
             // TxtBoxAge
             // 
-            this.TxtBoxAge.Location = new System.Drawing.Point(142, 197);
+            this.TxtBoxAge.Location = new System.Drawing.Point(137, 197);
             this.TxtBoxAge.Name = "TxtBoxAge";
             this.TxtBoxAge.Size = new System.Drawing.Size(58, 20);
             this.TxtBoxAge.TabIndex = 58;
@@ -319,7 +324,7 @@
             this.CTlabelBirthdayY.AutoSize = true;
             this.CTlabelBirthdayY.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelBirthdayY.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelBirthdayY.Location = new System.Drawing.Point(595, 223);
+            this.CTlabelBirthdayY.Location = new System.Drawing.Point(590, 223);
             this.CTlabelBirthdayY.Name = "CTlabelBirthdayY";
             this.CTlabelBirthdayY.Size = new System.Drawing.Size(30, 16);
             this.CTlabelBirthdayY.TabIndex = 64;
@@ -330,7 +335,7 @@
             this.CTlabelBirthdayD.AutoSize = true;
             this.CTlabelBirthdayD.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelBirthdayD.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelBirthdayD.Location = new System.Drawing.Point(485, 223);
+            this.CTlabelBirthdayD.Location = new System.Drawing.Point(480, 223);
             this.CTlabelBirthdayD.Name = "CTlabelBirthdayD";
             this.CTlabelBirthdayD.Size = new System.Drawing.Size(27, 16);
             this.CTlabelBirthdayD.TabIndex = 63;
@@ -394,7 +399,7 @@
             "2020",
             "2021",
             "2022"});
-            this.CTcboxYear.Location = new System.Drawing.Point(533, 198);
+            this.CTcboxYear.Location = new System.Drawing.Point(528, 198);
             this.CTcboxYear.Name = "CTcboxYear";
             this.CTcboxYear.Size = new System.Drawing.Size(92, 21);
             this.CTcboxYear.TabIndex = 62;
@@ -435,7 +440,7 @@
             "29",
             "30",
             "31"});
-            this.CTcboxDay.Location = new System.Drawing.Point(420, 198);
+            this.CTcboxDay.Location = new System.Drawing.Point(415, 198);
             this.CTcboxDay.Name = "CTcboxDay";
             this.CTcboxDay.Size = new System.Drawing.Size(92, 21);
             this.CTcboxDay.TabIndex = 61;
@@ -445,7 +450,7 @@
             this.CTlabelBirthdayM.AutoSize = true;
             this.CTlabelBirthdayM.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelBirthdayM.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelBirthdayM.Location = new System.Drawing.Point(357, 223);
+            this.CTlabelBirthdayM.Location = new System.Drawing.Point(352, 223);
             this.CTlabelBirthdayM.Name = "CTlabelBirthdayM";
             this.CTlabelBirthdayM.Size = new System.Drawing.Size(41, 16);
             this.CTlabelBirthdayM.TabIndex = 60;
@@ -468,14 +473,14 @@
             "October",
             "November",
             "December"});
-            this.CTcboxMonth.Location = new System.Drawing.Point(306, 199);
+            this.CTcboxMonth.Location = new System.Drawing.Point(301, 199);
             this.CTcboxMonth.Name = "CTcboxMonth";
             this.CTcboxMonth.Size = new System.Drawing.Size(92, 21);
             this.CTcboxMonth.TabIndex = 59;
             // 
             // TxtBoxEmail
             // 
-            this.TxtBoxEmail.Location = new System.Drawing.Point(473, 242);
+            this.TxtBoxEmail.Location = new System.Drawing.Point(468, 242);
             this.TxtBoxEmail.Name = "TxtBoxEmail";
             this.TxtBoxEmail.Size = new System.Drawing.Size(152, 20);
             this.TxtBoxEmail.TabIndex = 70;
@@ -485,7 +490,7 @@
             this.CTlabelEmail.AutoSize = true;
             this.CTlabelEmail.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelEmail.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelEmail.Location = new System.Drawing.Point(422, 245);
+            this.CTlabelEmail.Location = new System.Drawing.Point(417, 245);
             this.CTlabelEmail.Name = "CTlabelEmail";
             this.CTlabelEmail.Size = new System.Drawing.Size(48, 17);
             this.CTlabelEmail.TabIndex = 69;
@@ -493,7 +498,7 @@
             // 
             // TxtBoxPN
             // 
-            this.TxtBoxPN.Location = new System.Drawing.Point(322, 242);
+            this.TxtBoxPN.Location = new System.Drawing.Point(317, 242);
             this.TxtBoxPN.Name = "TxtBoxPN";
             this.TxtBoxPN.Size = new System.Drawing.Size(93, 20);
             this.TxtBoxPN.TabIndex = 68;
@@ -503,7 +508,7 @@
             this.CTlabelPNumber.AutoSize = true;
             this.CTlabelPNumber.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelPNumber.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelPNumber.Location = new System.Drawing.Point(216, 245);
+            this.CTlabelPNumber.Location = new System.Drawing.Point(211, 245);
             this.CTlabelPNumber.Name = "CTlabelPNumber";
             this.CTlabelPNumber.Size = new System.Drawing.Size(107, 17);
             this.CTlabelPNumber.TabIndex = 67;
@@ -516,7 +521,7 @@
             this.CTcboxSexFM.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.CTcboxSexFM.Location = new System.Drawing.Point(141, 241);
+            this.CTcboxSexFM.Location = new System.Drawing.Point(136, 241);
             this.CTcboxSexFM.Name = "CTcboxSexFM";
             this.CTcboxSexFM.Size = new System.Drawing.Size(64, 21);
             this.CTcboxSexFM.TabIndex = 66;
@@ -526,7 +531,7 @@
             this.CTlabelSex.AutoSize = true;
             this.CTlabelSex.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelSex.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelSex.Location = new System.Drawing.Point(99, 245);
+            this.CTlabelSex.Location = new System.Drawing.Point(94, 245);
             this.CTlabelSex.Name = "CTlabelSex";
             this.CTlabelSex.Size = new System.Drawing.Size(35, 17);
             this.CTlabelSex.TabIndex = 65;
@@ -534,7 +539,7 @@
             // 
             // TxtBoxCA
             // 
-            this.TxtBoxCA.Location = new System.Drawing.Point(142, 309);
+            this.TxtBoxCA.Location = new System.Drawing.Point(137, 305);
             this.TxtBoxCA.Name = "TxtBoxCA";
             this.TxtBoxCA.Size = new System.Drawing.Size(484, 20);
             this.TxtBoxCA.TabIndex = 74;
@@ -544,7 +549,7 @@
             this.CTlabelCurrentAddress.AutoSize = true;
             this.CTlabelCurrentAddress.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelCurrentAddress.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelCurrentAddress.Location = new System.Drawing.Point(20, 309);
+            this.CTlabelCurrentAddress.Location = new System.Drawing.Point(15, 305);
             this.CTlabelCurrentAddress.Name = "CTlabelCurrentAddress";
             this.CTlabelCurrentAddress.Size = new System.Drawing.Size(115, 17);
             this.CTlabelCurrentAddress.TabIndex = 73;
@@ -552,7 +557,7 @@
             // 
             // TxtBoxBP
             // 
-            this.TxtBoxBP.Location = new System.Drawing.Point(142, 268);
+            this.TxtBoxBP.Location = new System.Drawing.Point(137, 271);
             this.TxtBoxBP.Name = "TxtBoxBP";
             this.TxtBoxBP.Size = new System.Drawing.Size(484, 20);
             this.TxtBoxBP.TabIndex = 72;
@@ -562,7 +567,7 @@
             this.CTlabelBirthPlace.AutoSize = true;
             this.CTlabelBirthPlace.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelBirthPlace.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelBirthPlace.Location = new System.Drawing.Point(53, 271);
+            this.CTlabelBirthPlace.Location = new System.Drawing.Point(48, 274);
             this.CTlabelBirthPlace.Name = "CTlabelBirthPlace";
             this.CTlabelBirthPlace.Size = new System.Drawing.Size(82, 17);
             this.CTlabelBirthPlace.TabIndex = 71;
@@ -573,7 +578,7 @@
             this.CTlabelMotherSuffix.AutoSize = true;
             this.CTlabelMotherSuffix.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelMotherSuffix.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelMotherSuffix.Location = new System.Drawing.Point(587, 398);
+            this.CTlabelMotherSuffix.Location = new System.Drawing.Point(582, 398);
             this.CTlabelMotherSuffix.Name = "CTlabelMotherSuffix";
             this.CTlabelMotherSuffix.Size = new System.Drawing.Size(38, 16);
             this.CTlabelMotherSuffix.TabIndex = 86;
@@ -581,35 +586,35 @@
             // 
             // TxtBoxMotherSuffix
             // 
-            this.TxtBoxMotherSuffix.Location = new System.Drawing.Point(540, 375);
+            this.TxtBoxMotherSuffix.Location = new System.Drawing.Point(535, 375);
             this.TxtBoxMotherSuffix.Name = "TxtBoxMotherSuffix";
             this.TxtBoxMotherSuffix.Size = new System.Drawing.Size(85, 20);
             this.TxtBoxMotherSuffix.TabIndex = 85;
             // 
             // TxtBoxMotherSN
             // 
-            this.TxtBoxMotherSN.Location = new System.Drawing.Point(407, 375);
+            this.TxtBoxMotherSN.Location = new System.Drawing.Point(402, 375);
             this.TxtBoxMotherSN.Name = "TxtBoxMotherSN";
             this.TxtBoxMotherSN.Size = new System.Drawing.Size(127, 20);
             this.TxtBoxMotherSN.TabIndex = 84;
             // 
             // TxtBoxMotherMN
             // 
-            this.TxtBoxMotherMN.Location = new System.Drawing.Point(274, 375);
+            this.TxtBoxMotherMN.Location = new System.Drawing.Point(269, 375);
             this.TxtBoxMotherMN.Name = "TxtBoxMotherMN";
             this.TxtBoxMotherMN.Size = new System.Drawing.Size(127, 20);
             this.TxtBoxMotherMN.TabIndex = 83;
             // 
             // TxtBoxMotherFN
             // 
-            this.TxtBoxMotherFN.Location = new System.Drawing.Point(141, 375);
+            this.TxtBoxMotherFN.Location = new System.Drawing.Point(136, 375);
             this.TxtBoxMotherFN.Name = "TxtBoxMotherFN";
             this.TxtBoxMotherFN.Size = new System.Drawing.Size(127, 20);
             this.TxtBoxMotherFN.TabIndex = 82;
             // 
             // TxtBoxMotherPN
             // 
-            this.TxtBoxMotherPN.Location = new System.Drawing.Point(141, 423);
+            this.TxtBoxMotherPN.Location = new System.Drawing.Point(136, 423);
             this.TxtBoxMotherPN.Name = "TxtBoxMotherPN";
             this.TxtBoxMotherPN.Size = new System.Drawing.Size(93, 20);
             this.TxtBoxMotherPN.TabIndex = 81;
@@ -619,7 +624,7 @@
             this.CTlabelMotherPNumber.AutoSize = true;
             this.CTlabelMotherPNumber.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelMotherPNumber.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelMotherPNumber.Location = new System.Drawing.Point(27, 424);
+            this.CTlabelMotherPNumber.Location = new System.Drawing.Point(22, 424);
             this.CTlabelMotherPNumber.Name = "CTlabelMotherPNumber";
             this.CTlabelMotherPNumber.Size = new System.Drawing.Size(107, 17);
             this.CTlabelMotherPNumber.TabIndex = 80;
@@ -630,7 +635,7 @@
             this.CTlabelMNameSN.AutoSize = true;
             this.CTlabelMNameSN.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelMNameSN.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelMNameSN.Location = new System.Drawing.Point(479, 398);
+            this.CTlabelMNameSN.Location = new System.Drawing.Point(474, 398);
             this.CTlabelMNameSN.Name = "CTlabelMNameSN";
             this.CTlabelMNameSN.Size = new System.Drawing.Size(55, 16);
             this.CTlabelMNameSN.TabIndex = 79;
@@ -641,7 +646,7 @@
             this.CTlabelMNameMN.AutoSize = true;
             this.CTlabelMNameMN.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelMNameMN.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelMNameMN.Location = new System.Drawing.Point(326, 398);
+            this.CTlabelMNameMN.Location = new System.Drawing.Point(321, 398);
             this.CTlabelMNameMN.Name = "CTlabelMNameMN";
             this.CTlabelMNameMN.Size = new System.Drawing.Size(75, 16);
             this.CTlabelMNameMN.TabIndex = 78;
@@ -652,7 +657,7 @@
             this.CTlabelMNameFN.AutoSize = true;
             this.CTlabelMNameFN.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelMNameFN.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelMNameFN.Location = new System.Drawing.Point(204, 398);
+            this.CTlabelMNameFN.Location = new System.Drawing.Point(199, 398);
             this.CTlabelMNameFN.Name = "CTlabelMNameFN";
             this.CTlabelMNameFN.Size = new System.Drawing.Size(64, 16);
             this.CTlabelMNameFN.TabIndex = 77;
@@ -663,7 +668,7 @@
             this.CTlabelMother.AutoSize = true;
             this.CTlabelMother.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelMother.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelMother.Location = new System.Drawing.Point(24, 375);
+            this.CTlabelMother.Location = new System.Drawing.Point(19, 375);
             this.CTlabelMother.Name = "CTlabelMother";
             this.CTlabelMother.Size = new System.Drawing.Size(110, 17);
             this.CTlabelMother.TabIndex = 76;
@@ -674,7 +679,7 @@
             this.CTlabelAbout2.AutoSize = true;
             this.CTlabelAbout2.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelAbout2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelAbout2.Location = new System.Drawing.Point(16, 343);
+            this.CTlabelAbout2.Location = new System.Drawing.Point(11, 339);
             this.CTlabelAbout2.Name = "CTlabelAbout2";
             this.CTlabelAbout2.Size = new System.Drawing.Size(121, 15);
             this.CTlabelAbout2.TabIndex = 75;
@@ -685,7 +690,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(587, 523);
+            this.label1.Location = new System.Drawing.Point(582, 517);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 16);
             this.label1.TabIndex = 101;
@@ -693,35 +698,35 @@
             // 
             // TxtBoxFatherSuffix
             // 
-            this.TxtBoxFatherSuffix.Location = new System.Drawing.Point(540, 501);
+            this.TxtBoxFatherSuffix.Location = new System.Drawing.Point(535, 495);
             this.TxtBoxFatherSuffix.Name = "TxtBoxFatherSuffix";
             this.TxtBoxFatherSuffix.Size = new System.Drawing.Size(85, 20);
             this.TxtBoxFatherSuffix.TabIndex = 100;
             // 
             // TxtBoxFatherSN
             // 
-            this.TxtBoxFatherSN.Location = new System.Drawing.Point(407, 501);
+            this.TxtBoxFatherSN.Location = new System.Drawing.Point(402, 495);
             this.TxtBoxFatherSN.Name = "TxtBoxFatherSN";
             this.TxtBoxFatherSN.Size = new System.Drawing.Size(127, 20);
             this.TxtBoxFatherSN.TabIndex = 99;
             // 
             // TxtBoxFatherMN
             // 
-            this.TxtBoxFatherMN.Location = new System.Drawing.Point(274, 500);
+            this.TxtBoxFatherMN.Location = new System.Drawing.Point(269, 494);
             this.TxtBoxFatherMN.Name = "TxtBoxFatherMN";
             this.TxtBoxFatherMN.Size = new System.Drawing.Size(127, 20);
             this.TxtBoxFatherMN.TabIndex = 98;
             // 
             // TxtBoxFatherFN
             // 
-            this.TxtBoxFatherFN.Location = new System.Drawing.Point(141, 500);
+            this.TxtBoxFatherFN.Location = new System.Drawing.Point(136, 494);
             this.TxtBoxFatherFN.Name = "TxtBoxFatherFN";
             this.TxtBoxFatherFN.Size = new System.Drawing.Size(127, 20);
             this.TxtBoxFatherFN.TabIndex = 97;
             // 
             // TxtBoxFatherCA
             // 
-            this.TxtBoxFatherCA.Location = new System.Drawing.Point(141, 591);
+            this.TxtBoxFatherCA.Location = new System.Drawing.Point(136, 578);
             this.TxtBoxFatherCA.Name = "TxtBoxFatherCA";
             this.TxtBoxFatherCA.Size = new System.Drawing.Size(484, 20);
             this.TxtBoxFatherCA.TabIndex = 96;
@@ -731,7 +736,7 @@
             this.CTlabelFatherCA.AutoSize = true;
             this.CTlabelFatherCA.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelFatherCA.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelFatherCA.Location = new System.Drawing.Point(20, 591);
+            this.CTlabelFatherCA.Location = new System.Drawing.Point(15, 578);
             this.CTlabelFatherCA.Name = "CTlabelFatherCA";
             this.CTlabelFatherCA.Size = new System.Drawing.Size(115, 17);
             this.CTlabelFatherCA.TabIndex = 95;
@@ -739,7 +744,7 @@
             // 
             // TxtBoxMotherCA
             // 
-            this.TxtBoxMotherCA.Location = new System.Drawing.Point(141, 454);
+            this.TxtBoxMotherCA.Location = new System.Drawing.Point(136, 455);
             this.TxtBoxMotherCA.Name = "TxtBoxMotherCA";
             this.TxtBoxMotherCA.Size = new System.Drawing.Size(484, 20);
             this.TxtBoxMotherCA.TabIndex = 94;
@@ -749,7 +754,7 @@
             this.CTlabelMotherCA.AutoSize = true;
             this.CTlabelMotherCA.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelMotherCA.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelMotherCA.Location = new System.Drawing.Point(19, 454);
+            this.CTlabelMotherCA.Location = new System.Drawing.Point(14, 455);
             this.CTlabelMotherCA.Name = "CTlabelMotherCA";
             this.CTlabelMotherCA.Size = new System.Drawing.Size(115, 17);
             this.CTlabelMotherCA.TabIndex = 93;
@@ -757,7 +762,7 @@
             // 
             // TxtBoxFatherPN
             // 
-            this.TxtBoxFatherPN.Location = new System.Drawing.Point(141, 549);
+            this.TxtBoxFatherPN.Location = new System.Drawing.Point(136, 540);
             this.TxtBoxFatherPN.Name = "TxtBoxFatherPN";
             this.TxtBoxFatherPN.Size = new System.Drawing.Size(93, 20);
             this.TxtBoxFatherPN.TabIndex = 92;
@@ -767,7 +772,7 @@
             this.CTlabelFatherPNumber.AutoSize = true;
             this.CTlabelFatherPNumber.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelFatherPNumber.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelFatherPNumber.Location = new System.Drawing.Point(27, 552);
+            this.CTlabelFatherPNumber.Location = new System.Drawing.Point(22, 543);
             this.CTlabelFatherPNumber.Name = "CTlabelFatherPNumber";
             this.CTlabelFatherPNumber.Size = new System.Drawing.Size(107, 17);
             this.CTlabelFatherPNumber.TabIndex = 91;
@@ -778,7 +783,7 @@
             this.CTlabelFNameSN.AutoSize = true;
             this.CTlabelFNameSN.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelFNameSN.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelFNameSN.Location = new System.Drawing.Point(479, 524);
+            this.CTlabelFNameSN.Location = new System.Drawing.Point(474, 518);
             this.CTlabelFNameSN.Name = "CTlabelFNameSN";
             this.CTlabelFNameSN.Size = new System.Drawing.Size(55, 16);
             this.CTlabelFNameSN.TabIndex = 90;
@@ -789,7 +794,7 @@
             this.CTlabelFNameMN.AutoSize = true;
             this.CTlabelFNameMN.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelFNameMN.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelFNameMN.Location = new System.Drawing.Point(326, 523);
+            this.CTlabelFNameMN.Location = new System.Drawing.Point(321, 517);
             this.CTlabelFNameMN.Name = "CTlabelFNameMN";
             this.CTlabelFNameMN.Size = new System.Drawing.Size(75, 16);
             this.CTlabelFNameMN.TabIndex = 89;
@@ -800,7 +805,7 @@
             this.CTlabelFNameFN.AutoSize = true;
             this.CTlabelFNameFN.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelFNameFN.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelFNameFN.Location = new System.Drawing.Point(204, 523);
+            this.CTlabelFNameFN.Location = new System.Drawing.Point(199, 517);
             this.CTlabelFNameFN.Name = "CTlabelFNameFN";
             this.CTlabelFNameFN.Size = new System.Drawing.Size(64, 16);
             this.CTlabelFNameFN.TabIndex = 88;
@@ -811,7 +816,7 @@
             this.CTlabelFather.AutoSize = true;
             this.CTlabelFather.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelFather.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelFather.Location = new System.Drawing.Point(28, 501);
+            this.CTlabelFather.Location = new System.Drawing.Point(23, 495);
             this.CTlabelFather.Name = "CTlabelFather";
             this.CTlabelFather.Size = new System.Drawing.Size(106, 17);
             this.CTlabelFather.TabIndex = 87;
@@ -821,7 +826,7 @@
             // 
             this.CTcheckboxIDK1.AutoSize = true;
             this.CTcheckboxIDK1.BackColor = System.Drawing.Color.Transparent;
-            this.CTcheckboxIDK1.Location = new System.Drawing.Point(561, 695);
+            this.CTcheckboxIDK1.Location = new System.Drawing.Point(556, 682);
             this.CTcheckboxIDK1.Name = "CTcheckboxIDK1";
             this.CTcheckboxIDK1.Size = new System.Drawing.Size(72, 17);
             this.CTcheckboxIDK1.TabIndex = 177;
@@ -832,7 +837,7 @@
             // 
             this.CTcheckboxNo4.AutoSize = true;
             this.CTcheckboxNo4.BackColor = System.Drawing.Color.Transparent;
-            this.CTcheckboxNo4.Location = new System.Drawing.Point(611, 672);
+            this.CTcheckboxNo4.Location = new System.Drawing.Point(606, 659);
             this.CTcheckboxNo4.Name = "CTcheckboxNo4";
             this.CTcheckboxNo4.Size = new System.Drawing.Size(40, 17);
             this.CTcheckboxNo4.TabIndex = 176;
@@ -843,7 +848,7 @@
             // 
             this.CTcheckboxYes4.AutoSize = true;
             this.CTcheckboxYes4.BackColor = System.Drawing.Color.Transparent;
-            this.CTcheckboxYes4.Location = new System.Drawing.Point(561, 672);
+            this.CTcheckboxYes4.Location = new System.Drawing.Point(556, 659);
             this.CTcheckboxYes4.Name = "CTcheckboxYes4";
             this.CTcheckboxYes4.Size = new System.Drawing.Size(44, 17);
             this.CTcheckboxYes4.TabIndex = 175;
@@ -855,7 +860,7 @@
             this.CTlabelQ4.AutoSize = true;
             this.CTlabelQ4.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelQ4.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelQ4.Location = new System.Drawing.Point(349, 673);
+            this.CTlabelQ4.Location = new System.Drawing.Point(344, 660);
             this.CTlabelQ4.Name = "CTlabelQ4";
             this.CTlabelQ4.Size = new System.Drawing.Size(206, 17);
             this.CTlabelQ4.TabIndex = 174;
@@ -865,7 +870,7 @@
             // 
             this.CTcheckboxNo3.AutoSize = true;
             this.CTcheckboxNo3.BackColor = System.Drawing.Color.Transparent;
-            this.CTcheckboxNo3.Location = new System.Drawing.Point(611, 654);
+            this.CTcheckboxNo3.Location = new System.Drawing.Point(606, 641);
             this.CTcheckboxNo3.Name = "CTcheckboxNo3";
             this.CTcheckboxNo3.Size = new System.Drawing.Size(40, 17);
             this.CTcheckboxNo3.TabIndex = 173;
@@ -876,7 +881,7 @@
             // 
             this.CTcheckboxYes3.AutoSize = true;
             this.CTcheckboxYes3.BackColor = System.Drawing.Color.Transparent;
-            this.CTcheckboxYes3.Location = new System.Drawing.Point(561, 653);
+            this.CTcheckboxYes3.Location = new System.Drawing.Point(556, 640);
             this.CTcheckboxYes3.Name = "CTcheckboxYes3";
             this.CTcheckboxYes3.Size = new System.Drawing.Size(44, 17);
             this.CTcheckboxYes3.TabIndex = 172;
@@ -888,7 +893,7 @@
             this.CTlabelQ3.AutoSize = true;
             this.CTlabelQ3.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelQ3.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelQ3.Location = new System.Drawing.Point(349, 653);
+            this.CTlabelQ3.Location = new System.Drawing.Point(344, 640);
             this.CTlabelQ3.Name = "CTlabelQ3";
             this.CTlabelQ3.Size = new System.Drawing.Size(185, 17);
             this.CTlabelQ3.TabIndex = 171;
@@ -899,7 +904,7 @@
             this.CTlabelAbout4.AutoSize = true;
             this.CTlabelAbout4.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelAbout4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelAbout4.Location = new System.Drawing.Point(352, 628);
+            this.CTlabelAbout4.Location = new System.Drawing.Point(347, 615);
             this.CTlabelAbout4.Name = "CTlabelAbout4";
             this.CTlabelAbout4.Size = new System.Drawing.Size(104, 15);
             this.CTlabelAbout4.TabIndex = 170;
@@ -909,7 +914,7 @@
             // 
             this.CTcheckboxNo2.AutoSize = true;
             this.CTcheckboxNo2.BackColor = System.Drawing.Color.Transparent;
-            this.CTcheckboxNo2.Location = new System.Drawing.Point(306, 673);
+            this.CTcheckboxNo2.Location = new System.Drawing.Point(301, 660);
             this.CTcheckboxNo2.Name = "CTcheckboxNo2";
             this.CTcheckboxNo2.Size = new System.Drawing.Size(40, 17);
             this.CTcheckboxNo2.TabIndex = 169;
@@ -920,7 +925,7 @@
             // 
             this.CTcheckboxYes2.AutoSize = true;
             this.CTcheckboxYes2.BackColor = System.Drawing.Color.Transparent;
-            this.CTcheckboxYes2.Location = new System.Drawing.Point(256, 672);
+            this.CTcheckboxYes2.Location = new System.Drawing.Point(251, 659);
             this.CTcheckboxYes2.Name = "CTcheckboxYes2";
             this.CTcheckboxYes2.Size = new System.Drawing.Size(44, 17);
             this.CTcheckboxYes2.TabIndex = 168;
@@ -932,7 +937,7 @@
             this.CTlabelQ2.AutoSize = true;
             this.CTlabelQ2.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelQ2.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelQ2.Location = new System.Drawing.Point(22, 673);
+            this.CTlabelQ2.Location = new System.Drawing.Point(17, 660);
             this.CTlabelQ2.Name = "CTlabelQ2";
             this.CTlabelQ2.Size = new System.Drawing.Size(223, 17);
             this.CTlabelQ2.TabIndex = 167;
@@ -942,7 +947,7 @@
             // 
             this.CTcheckbocNo1.AutoSize = true;
             this.CTcheckbocNo1.BackColor = System.Drawing.Color.Transparent;
-            this.CTcheckbocNo1.Location = new System.Drawing.Point(306, 654);
+            this.CTcheckbocNo1.Location = new System.Drawing.Point(301, 641);
             this.CTcheckbocNo1.Name = "CTcheckbocNo1";
             this.CTcheckbocNo1.Size = new System.Drawing.Size(40, 17);
             this.CTcheckbocNo1.TabIndex = 166;
@@ -953,7 +958,7 @@
             // 
             this.CTcheckboxYes1.AutoSize = true;
             this.CTcheckboxYes1.BackColor = System.Drawing.Color.Transparent;
-            this.CTcheckboxYes1.Location = new System.Drawing.Point(256, 654);
+            this.CTcheckboxYes1.Location = new System.Drawing.Point(251, 641);
             this.CTcheckboxYes1.Name = "CTcheckboxYes1";
             this.CTcheckboxYes1.Size = new System.Drawing.Size(44, 17);
             this.CTcheckboxYes1.TabIndex = 165;
@@ -965,7 +970,7 @@
             this.CTlabelQ1.AutoSize = true;
             this.CTlabelQ1.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelQ1.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelQ1.Location = new System.Drawing.Point(22, 653);
+            this.CTlabelQ1.Location = new System.Drawing.Point(17, 640);
             this.CTlabelQ1.Name = "CTlabelQ1";
             this.CTlabelQ1.Size = new System.Drawing.Size(228, 17);
             this.CTlabelQ1.TabIndex = 164;
@@ -976,7 +981,7 @@
             this.CTlabelAbout3.AutoSize = true;
             this.CTlabelAbout3.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelAbout3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelAbout3.Location = new System.Drawing.Point(22, 628);
+            this.CTlabelAbout3.Location = new System.Drawing.Point(17, 624);
             this.CTlabelAbout3.Name = "CTlabelAbout3";
             this.CTlabelAbout3.Size = new System.Drawing.Size(87, 15);
             this.CTlabelAbout3.TabIndex = 163;
@@ -1568,15 +1573,15 @@
             // 
             // CTrichtxtbox1
             // 
-            this.CTrichtxtbox1.Location = new System.Drawing.Point(1049, 423);
+            this.CTrichtxtbox1.Location = new System.Drawing.Point(1049, 445);
             this.CTrichtxtbox1.Name = "CTrichtxtbox1";
-            this.CTrichtxtbox1.Size = new System.Drawing.Size(296, 266);
+            this.CTrichtxtbox1.Size = new System.Drawing.Size(296, 225);
             this.CTrichtxtbox1.TabIndex = 253;
             this.CTrichtxtbox1.Text = "";
             // 
             // CTbtnFilter
             // 
-            this.CTbtnFilter.Location = new System.Drawing.Point(949, 420);
+            this.CTbtnFilter.Location = new System.Drawing.Point(949, 442);
             this.CTbtnFilter.Name = "CTbtnFilter";
             this.CTbtnFilter.Size = new System.Drawing.Size(75, 25);
             this.CTbtnFilter.TabIndex = 251;
@@ -1587,14 +1592,14 @@
             // CTList2
             // 
             this.CTList2.FormattingEnabled = true;
-            this.CTList2.Location = new System.Drawing.Point(856, 449);
+            this.CTList2.Location = new System.Drawing.Point(856, 471);
             this.CTList2.Name = "CTList2";
-            this.CTList2.Size = new System.Drawing.Size(168, 238);
+            this.CTList2.Size = new System.Drawing.Size(168, 199);
             this.CTList2.TabIndex = 250;
             // 
             // TxtBoxDateFilter
             // 
-            this.TxtBoxDateFilter.Location = new System.Drawing.Point(856, 423);
+            this.TxtBoxDateFilter.Location = new System.Drawing.Point(856, 445);
             this.TxtBoxDateFilter.Name = "TxtBoxDateFilter";
             this.TxtBoxDateFilter.Size = new System.Drawing.Size(81, 20);
             this.TxtBoxDateFilter.TabIndex = 249;
@@ -1602,14 +1607,14 @@
             // CTList1
             // 
             this.CTList1.FormattingEnabled = true;
-            this.CTList1.Location = new System.Drawing.Point(664, 423);
+            this.CTList1.Location = new System.Drawing.Point(664, 446);
             this.CTList1.Name = "CTList1";
-            this.CTList1.Size = new System.Drawing.Size(168, 264);
+            this.CTList1.Size = new System.Drawing.Size(168, 225);
             this.CTList1.TabIndex = 247;
             // 
             // CTbtnOpen
             // 
-            this.CTbtnOpen.Location = new System.Drawing.Point(1049, 695);
+            this.CTbtnOpen.Location = new System.Drawing.Point(1049, 673);
             this.CTbtnOpen.Name = "CTbtnOpen";
             this.CTbtnOpen.Size = new System.Drawing.Size(75, 25);
             this.CTbtnOpen.TabIndex = 254;
@@ -1617,11 +1622,71 @@
             this.CTbtnOpen.UseVisualStyleBackColor = true;
             this.CTbtnOpen.Click += new System.EventHandler(this.CTbtnOpen_Click);
             // 
+            // CTasterterisk2
+            // 
+            this.CTasterterisk2.AutoSize = true;
+            this.CTasterterisk2.BackColor = System.Drawing.Color.Transparent;
+            this.CTasterterisk2.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTasterterisk2.ForeColor = System.Drawing.Color.Red;
+            this.CTasterterisk2.Location = new System.Drawing.Point(1077, 379);
+            this.CTasterterisk2.Name = "CTasterterisk2";
+            this.CTasterterisk2.Size = new System.Drawing.Size(15, 16);
+            this.CTasterterisk2.TabIndex = 257;
+            this.CTasterterisk2.Text = "*";
+            // 
+            // CTasterterisk1
+            // 
+            this.CTasterterisk1.AutoSize = true;
+            this.CTasterterisk1.BackColor = System.Drawing.Color.Transparent;
+            this.CTasterterisk1.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTasterterisk1.ForeColor = System.Drawing.Color.Red;
+            this.CTasterterisk1.Location = new System.Drawing.Point(661, 377);
+            this.CTasterterisk1.Name = "CTasterterisk1";
+            this.CTasterterisk1.Size = new System.Drawing.Size(15, 16);
+            this.CTasterterisk1.TabIndex = 256;
+            this.CTasterterisk1.Text = "*";
+            // 
+            // CTlabelAbout8
+            // 
+            this.CTlabelAbout8.AutoSize = true;
+            this.CTlabelAbout8.BackColor = System.Drawing.Color.Transparent;
+            this.CTlabelAbout8.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTlabelAbout8.Location = new System.Drawing.Point(673, 377);
+            this.CTlabelAbout8.Name = "CTlabelAbout8";
+            this.CTlabelAbout8.Size = new System.Drawing.Size(408, 16);
+            this.CTlabelAbout8.TabIndex = 255;
+            this.CTlabelAbout8.Text = "After completing the form, please select the button \"Save\" to download the file";
+            // 
+            // CTlabelAbout9
+            // 
+            this.CTlabelAbout9.AutoSize = true;
+            this.CTlabelAbout9.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTlabelAbout9.Location = new System.Drawing.Point(661, 423);
+            this.CTlabelAbout9.Name = "CTlabelAbout9";
+            this.CTlabelAbout9.Size = new System.Drawing.Size(96, 16);
+            this.CTlabelAbout9.TabIndex = 258;
+            this.CTlabelAbout9.Text = "List of all records";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(853, 423);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 16);
+            this.label2.TabIndex = 259;
+            this.label2.Text = "e.g. June 1 2022";
+            // 
             // ContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.CTlabelAbout9);
+            this.Controls.Add(this.CTasterterisk2);
+            this.Controls.Add(this.CTasterterisk1);
+            this.Controls.Add(this.CTlabelAbout8);
             this.Controls.Add(this.CTbtnOpen);
             this.Controls.Add(this.CTrichtxtbox1);
             this.Controls.Add(this.CTbtnFilter);
@@ -1896,6 +1961,11 @@
         private System.Windows.Forms.TextBox TxtBoxDateFilter;
         private System.Windows.Forms.ListBox CTList1;
         private System.Windows.Forms.Button CTbtnOpen;
+        private System.Windows.Forms.Label CTasterterisk2;
+        private System.Windows.Forms.Label CTasterterisk1;
+        private System.Windows.Forms.Label CTlabelAbout8;
+        private System.Windows.Forms.Label CTlabelAbout9;
+        private System.Windows.Forms.Label label2;
     }
 }
 
