@@ -43,7 +43,7 @@ namespace Contact_Tracing__updated_
                 string Person4 = (TxtBoxName4.Text + " " + TxtBoxDate4.Text + " " + TxtBoxTime4.Text + " " + TxtBoxLoc4.Text);
                 string Person5 = (TxtBoxName5.Text + " " + TxtBoxDate5.Text + " " + TxtBoxTime5.Text + " " + TxtBoxLoc5.Text);
 
-                if ((Date == "") || (Name == "") || (Age == "") || (Birthday == "") || (SexFM == "") || (PNumber == "") || (BirthPlace == "") || (CurrentAdd == "") || ((CTcheckboxYes1.Checked == false) && (CTcheckbocNo1.Checked == false)) || ((CTcheckboxYes2.Checked == false) && (CTcheckboxNo2.Checked == false)) || ((CTcheckboxYes3.Checked == false) && (CTcheckboxNo3.Checked == false)) || ((CTcheckboxYes4.Checked == false) && (CTcheckboxNo4.Checked == false) && (CTcheckboxIDK1.Checked == false)))
+                if ((Name == "") || (Age == "") || (Birthday == "") || (SexFM == "") || (PNumber == "") || (BirthPlace == "") || (CurrentAdd == "") || ((CTcheckboxYes1.Checked == false) && (CTcheckbocNo1.Checked == false)) || ((CTcheckboxYes2.Checked == false) && (CTcheckboxNo2.Checked == false)) || ((CTcheckboxYes3.Checked == false) && (CTcheckboxNo3.Checked == false)) || ((CTcheckboxYes4.Checked == false) && (CTcheckboxNo4.Checked == false) && (CTcheckboxIDK1.Checked == false)))
                 {
                     MessageBox.Show("Please complete the form", "Incomplete");
                 }
@@ -153,13 +153,13 @@ namespace Contact_Tracing__updated_
                 if (File.Exists(file_name_record) == true)
                 {
                     StreamReader filterContact = new StreamReader(@"C:\Users\Santos\Documents\Records\" + Date_Find + ".txt", true);
-                    CTList2.Items.Add("There is file available: ");
+                    CTList2.Items.Add("There is file available, click the Open button to view the record: ");
                     CTList2.Items.Add(filterContact.ReadLine());
                 }
                 else
                 {
-                    MessageBox.Show("No record available at " + Date_Find);
-                    CTList2.Items.Add("There is no record accessible");
+                    MessageBox.Show("No record available for " + Date_Find);
+                    CTList2.Items.Add("There is no accessible record");
                 }
             }
             catch
