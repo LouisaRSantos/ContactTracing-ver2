@@ -43,7 +43,7 @@ namespace Contact_Tracing__updated_
                 string Person4 = (TxtBoxName4.Text + " " + TxtBoxDate4.Text + " " + TxtBoxTime4.Text + " " + TxtBoxLoc4.Text);
                 string Person5 = (TxtBoxName5.Text + " " + TxtBoxDate5.Text + " " + TxtBoxTime5.Text + " " + TxtBoxLoc5.Text);
 
-                if ((Name == "") || (Age == "") || (Birthday == "") || (SexFM == "") || (PNumber == "") || (BirthPlace == "") || (CurrentAdd == "") || ((CTcheckboxYes1.Checked == false) && (CTcheckbocNo1.Checked == false)) || ((CTcheckboxYes2.Checked == false) && (CTcheckboxNo2.Checked == false)) || ((CTcheckboxYes3.Checked == false) && (CTcheckboxNo3.Checked == false)) || ((CTcheckboxYes4.Checked == false) && (CTcheckboxNo4.Checked == false) && (CTcheckboxIDK1.Checked == false)))
+                if ((Date == "") || (Name == "") || (Age == "") || (Birthday == "") || (SexFM == "") || (PNumber == "") || (BirthPlace == "") || (CurrentAdd == "") || ((CTcheckboxYes1.Checked == false) && (CTcheckbocNo1.Checked == false)) || ((CTcheckboxYes2.Checked == false) && (CTcheckboxNo2.Checked == false)) || ((CTcheckboxYes3.Checked == false) && (CTcheckboxNo3.Checked == false)) || ((CTcheckboxYes4.Checked == false) && (CTcheckboxNo4.Checked == false) && (CTcheckboxIDK1.Checked == false)))
                 {
                     MessageBox.Show("Please complete the form", "Incomplete");
                 }
@@ -57,7 +57,7 @@ namespace Contact_Tracing__updated_
                     saveContact.WriteLine(CTlabelAbout3.Text + "\r\n" + "1. " + CTlabelQ1.Text + "- " + "\r\n" + "\t" + CTcheckboxYes1.Text + ": " + CTcheckboxYes1.Checked.ToString() + " " + CTcheckbocNo1.Text + ": " + CTcheckbocNo1.Checked.ToString() + "\r\n");
                     saveContact.WriteLine("2. " + CTlabelQ2.Text + "- " + "\r\n" + "\t" + CTcheckboxYes2.Text + ": " + CTcheckboxYes2.Checked.ToString() + " " + CTcheckboxNo2.Text + ": " + CTcheckboxNo2.Checked.ToString() + "\r\n");
                     saveContact.WriteLine(CTlabelAbout4.Text + "\r\n" + "3. " + CTlabelQ3.Text + "- " + "\r\n" + "\t" + CTcheckboxYes3.Text + ": " + CTcheckboxYes3.Checked.ToString() + " " + CTcheckboxNo3.Text + ": " + CTcheckboxNo3.Checked.ToString() + "\r\n");
-                    saveContact.WriteLine("4. " + CTlabelQ4.Text + "- " + "\r\n" + "\t" + CTcheckboxYes4.Text + ": " + CTcheckboxYes4.Checked.ToString() + " " + CTcheckboxNo4.Text + ": " + CTcheckboxNo4.Checked.ToString() + " " + CTcheckboxIDK1.Text + CTcheckboxIDK1.Checked.ToString() + "\r\n");
+                    saveContact.WriteLine("4. " + CTlabelQ4.Text + "- " + "\r\n" + "\t" + CTcheckboxYes4.Text + ": " + CTcheckboxYes4.Checked.ToString() + " " + CTcheckboxNo4.Text + ": " + CTcheckboxNo4.Checked.ToString() + " " + CTcheckboxIDK1.Text + ": " + CTcheckboxIDK1.Checked.ToString() + "\r\n");
 
                     saveContact.WriteLine(CTlabelAbout5.Text + "\r\n" + "1. " + Person1);
                     saveContact.WriteLine("2. " + Person2);
@@ -75,13 +75,13 @@ namespace Contact_Tracing__updated_
             }
             try
             {
-                string Date = (CTcboxDateM.SelectedItem.ToString() + " " + CTcboxDateD.SelectedItem.ToString() + " " + CTcboxDateY.SelectedItem.ToString());
-                StreamReader readContact = new StreamReader(@"C:\Users\Santos\Documents\Records\" + Date + ".txt");
-                CTList1.Items.Add(readContact.ReadLine());
-                readContact.Close();
+                string recordDate = (CTcboxDateM.SelectedItem.ToString() + " " + CTcboxDateD.SelectedItem.ToString() + " " + CTcboxDateY.SelectedItem.ToString());
+                StreamReader displayContact = new StreamReader(@"C:\Users\Santos\Documents\Records\" + recordDate + ".txt");
+                CTList1.Items.Add("Entry: " + displayContact.ReadLine());
+                displayContact.Close();
             }
             catch
-            { 
+            {
             }
         }
 
@@ -149,10 +149,11 @@ namespace Contact_Tracing__updated_
             {
                 string Date_Find = CTcboxFilterM.SelectedItem.ToString() + " " + CTcboxFilterD.SelectedItem.ToString() + " " + CTcboxFilterY.SelectedItem.ToString();
                 string file_name_record = (@"C:\Users\Santos\Documents\Records\" + Date_Find + ".txt");
-                
+
                 if (File.Exists(file_name_record) == true)
                 {
                     StreamReader filterContact = new StreamReader(@"C:\Users\Santos\Documents\Records\" + Date_Find + ".txt", true);
+                    CTList2.Items.Add("There is file available: ");
                     CTList2.Items.Add(filterContact.ReadLine());
                 }
                 else
@@ -172,11 +173,10 @@ namespace Contact_Tracing__updated_
             try
             {
                 string Date_Find = CTcboxFilterM.SelectedItem.ToString() + " " + CTcboxFilterD.SelectedItem.ToString() + " " + CTcboxFilterY.SelectedItem.ToString();
-                string openFile = Date_Find;
-                StreamReader readContact = new StreamReader(@"C:\Users\Santos\Documents\Records\" + openFile + ".txt");
-                while (!readContact.EndOfStream)
+                StreamReader openFile = new StreamReader(@"C:\Users\Santos\Documents\Records\" + Date_Find + ".txt");
+                while (!openFile.EndOfStream)
                 {
-                    string record = readContact.ReadToEnd();
+                    string record = openFile.ReadToEnd();
                     CTrichtxtbox1.Text = record;
                 }          
             }
