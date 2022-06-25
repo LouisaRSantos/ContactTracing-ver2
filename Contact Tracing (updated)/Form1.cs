@@ -145,28 +145,25 @@ namespace Contact_Tracing__updated_
         private void CTbtnFilter_Click(object sender, EventArgs e)
         {
             CTList2.Items.Clear();
-            string Date_Find = TxtBoxDateFilter.Text;
-
-            string file_name = (@"C:\Users\Santos\Documents\Records\" + Date_Find + ".txt");
             try
             {
-                if (Date_Find == "")
-                {
-                    MessageBox.Show("Please input date to filter");
-                }
-                else if (System.IO.File.Exists(file_name) == true)
+                string Date_Find = CTcboxFilterM.SelectedItem.ToString() + " " + CTcboxFilterD.SelectedItem.ToString() + " " + CTcboxFilterY.SelectedItem.ToString();
+                string file_name_record = (@"C:\Users\Santos\Documents\Records\" + Date_Find + ".txt");
+                
+                if (File.Exists(file_name_record) == true)
                 {
                     StreamReader filterContact = new StreamReader(@"C:\Users\Santos\Documents\Records\" + Date_Find + ".txt", true);
                     CTList2.Items.Add(filterContact.ReadLine());
                 }
                 else
                 {
-                    MessageBox.Show("No record");
+                    MessageBox.Show("No record available at " + Date_Find);
+                    CTList2.Items.Add("There is no record accessible");
                 }
             }
             catch
             {
-                MessageBox.Show("Error. Please try again.");
+                MessageBox.Show("Please input date to filter.");
             }
         }
 
@@ -174,12 +171,13 @@ namespace Contact_Tracing__updated_
         {
             try
             {
-                string DateFilter = TxtBoxDateFilter.Text;
-                StreamReader readContact = new StreamReader(@"C:\Users\Santos\Documents\Records\" + DateFilter + ".txt");
+                string Date_Find = CTcboxFilterM.SelectedItem.ToString() + " " + CTcboxFilterD.SelectedItem.ToString() + " " + CTcboxFilterY.SelectedItem.ToString();
+                string openFile = Date_Find;
+                StreamReader readContact = new StreamReader(@"C:\Users\Santos\Documents\Records\" + openFile + ".txt");
                 while (!readContact.EndOfStream)
                 {
-                    string line = readContact.ReadToEnd();
-                    CTrichtxtbox1.Text = line;
+                    string record = readContact.ReadToEnd();
+                    CTrichtxtbox1.Text = record;
                 }          
             }
             catch

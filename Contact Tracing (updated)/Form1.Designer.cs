@@ -158,14 +158,15 @@
             this.CTrichtxtbox1 = new System.Windows.Forms.RichTextBox();
             this.CTbtnFilter = new System.Windows.Forms.Button();
             this.CTList2 = new System.Windows.Forms.ListBox();
-            this.TxtBoxDateFilter = new System.Windows.Forms.TextBox();
             this.CTList1 = new System.Windows.Forms.ListBox();
             this.CTbtnOpen = new System.Windows.Forms.Button();
             this.CTasterterisk2 = new System.Windows.Forms.Label();
             this.CTasterterisk1 = new System.Windows.Forms.Label();
             this.CTlabelAbout8 = new System.Windows.Forms.Label();
             this.CTlabelAbout9 = new System.Windows.Forms.Label();
-            this.CTlabelAbout10 = new System.Windows.Forms.Label();
+            this.CTcboxFilterY = new System.Windows.Forms.ComboBox();
+            this.CTcboxFilterD = new System.Windows.Forms.ComboBox();
+            this.CTcboxFilterM = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.CTpicbox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1580,15 +1581,15 @@
             // 
             // CTrichtxtbox1
             // 
-            this.CTrichtxtbox1.Location = new System.Drawing.Point(1049, 445);
+            this.CTrichtxtbox1.Location = new System.Drawing.Point(1019, 445);
             this.CTrichtxtbox1.Name = "CTrichtxtbox1";
-            this.CTrichtxtbox1.Size = new System.Drawing.Size(296, 225);
+            this.CTrichtxtbox1.Size = new System.Drawing.Size(326, 225);
             this.CTrichtxtbox1.TabIndex = 253;
             this.CTrichtxtbox1.Text = "";
             // 
             // CTbtnFilter
             // 
-            this.CTbtnFilter.Location = new System.Drawing.Point(949, 442);
+            this.CTbtnFilter.Location = new System.Drawing.Point(909, 564);
             this.CTbtnFilter.Name = "CTbtnFilter";
             this.CTbtnFilter.Size = new System.Drawing.Size(75, 25);
             this.CTbtnFilter.TabIndex = 251;
@@ -1599,29 +1600,22 @@
             // CTList2
             // 
             this.CTList2.FormattingEnabled = true;
-            this.CTList2.Location = new System.Drawing.Point(856, 471);
+            this.CTList2.Location = new System.Drawing.Point(664, 596);
             this.CTList2.Name = "CTList2";
-            this.CTList2.Size = new System.Drawing.Size(168, 199);
+            this.CTList2.Size = new System.Drawing.Size(320, 69);
             this.CTList2.TabIndex = 250;
-            // 
-            // TxtBoxDateFilter
-            // 
-            this.TxtBoxDateFilter.Location = new System.Drawing.Point(856, 445);
-            this.TxtBoxDateFilter.Name = "TxtBoxDateFilter";
-            this.TxtBoxDateFilter.Size = new System.Drawing.Size(81, 20);
-            this.TxtBoxDateFilter.TabIndex = 249;
             // 
             // CTList1
             // 
             this.CTList1.FormattingEnabled = true;
             this.CTList1.Location = new System.Drawing.Point(664, 446);
             this.CTList1.Name = "CTList1";
-            this.CTList1.Size = new System.Drawing.Size(168, 225);
+            this.CTList1.Size = new System.Drawing.Size(320, 108);
             this.CTList1.TabIndex = 247;
             // 
             // CTbtnOpen
             // 
-            this.CTbtnOpen.Location = new System.Drawing.Point(1049, 673);
+            this.CTbtnOpen.Location = new System.Drawing.Point(1019, 674);
             this.CTbtnOpen.Name = "CTbtnOpen";
             this.CTbtnOpen.Size = new System.Drawing.Size(75, 25);
             this.CTbtnOpen.TabIndex = 254;
@@ -1675,24 +1669,140 @@
             this.CTlabelAbout9.TabIndex = 258;
             this.CTlabelAbout9.Text = "List of all records";
             // 
-            // CTlabelAbout10
+            // CTcboxFilterY
             // 
-            this.CTlabelAbout10.AutoSize = true;
-            this.CTlabelAbout10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.CTlabelAbout10.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelAbout10.Location = new System.Drawing.Point(853, 423);
-            this.CTlabelAbout10.Name = "CTlabelAbout10";
-            this.CTlabelAbout10.Size = new System.Drawing.Size(94, 16);
-            this.CTlabelAbout10.TabIndex = 259;
-            this.CTlabelAbout10.Text = "e.g. June 1 2022";
+            this.CTcboxFilterY.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CTcboxFilterY.FormattingEnabled = true;
+            this.CTcboxFilterY.Items.AddRange(new object[] {
+            "1970",
+            "1971",
+            "1972",
+            "1973",
+            "1974",
+            "1975",
+            "1976",
+            "1977",
+            "1978",
+            "1979",
+            "1980",
+            "1981",
+            "1982",
+            "1983",
+            "1984",
+            "1985",
+            "1986",
+            "1987",
+            "1988",
+            "1989",
+            "1990",
+            "1991",
+            "1992",
+            "1993",
+            "1994",
+            "1995",
+            "1996",
+            "1997",
+            "1998",
+            "1999",
+            "2000",
+            "2001",
+            "2002",
+            "2003",
+            "2004",
+            "2005",
+            "2006",
+            "2007",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022"});
+            this.CTcboxFilterY.Location = new System.Drawing.Point(822, 565);
+            this.CTcboxFilterY.Name = "CTcboxFilterY";
+            this.CTcboxFilterY.Size = new System.Drawing.Size(73, 21);
+            this.CTcboxFilterY.TabIndex = 262;
+            // 
+            // CTcboxFilterD
+            // 
+            this.CTcboxFilterD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CTcboxFilterD.FormattingEnabled = true;
+            this.CTcboxFilterD.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.CTcboxFilterD.Location = new System.Drawing.Point(743, 565);
+            this.CTcboxFilterD.Name = "CTcboxFilterD";
+            this.CTcboxFilterD.Size = new System.Drawing.Size(73, 21);
+            this.CTcboxFilterD.TabIndex = 261;
+            // 
+            // CTcboxFilterM
+            // 
+            this.CTcboxFilterM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CTcboxFilterM.FormattingEnabled = true;
+            this.CTcboxFilterM.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.CTcboxFilterM.Location = new System.Drawing.Point(664, 565);
+            this.CTcboxFilterM.Name = "CTcboxFilterM";
+            this.CTcboxFilterM.Size = new System.Drawing.Size(73, 21);
+            this.CTcboxFilterM.TabIndex = 263;
             // 
             // ContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1362, 741);
-            this.Controls.Add(this.CTlabelAbout10);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
+            this.Controls.Add(this.CTcboxFilterM);
+            this.Controls.Add(this.CTcboxFilterY);
+            this.Controls.Add(this.CTcboxFilterD);
             this.Controls.Add(this.CTlabelAbout9);
             this.Controls.Add(this.CTasterterisk2);
             this.Controls.Add(this.CTasterterisk1);
@@ -1701,7 +1811,6 @@
             this.Controls.Add(this.CTrichtxtbox1);
             this.Controls.Add(this.CTbtnFilter);
             this.Controls.Add(this.CTList2);
-            this.Controls.Add(this.TxtBoxDateFilter);
             this.Controls.Add(this.CTList1);
             this.Controls.Add(this.CTcboxDateY);
             this.Controls.Add(this.CTcboxDateD);
@@ -1968,14 +2077,15 @@
         private System.Windows.Forms.RichTextBox CTrichtxtbox1;
         private System.Windows.Forms.Button CTbtnFilter;
         private System.Windows.Forms.ListBox CTList2;
-        private System.Windows.Forms.TextBox TxtBoxDateFilter;
         private System.Windows.Forms.ListBox CTList1;
         private System.Windows.Forms.Button CTbtnOpen;
         private System.Windows.Forms.Label CTasterterisk2;
         private System.Windows.Forms.Label CTasterterisk1;
         private System.Windows.Forms.Label CTlabelAbout8;
         private System.Windows.Forms.Label CTlabelAbout9;
-        private System.Windows.Forms.Label CTlabelAbout10;
+        private System.Windows.Forms.ComboBox CTcboxFilterY;
+        private System.Windows.Forms.ComboBox CTcboxFilterD;
+        private System.Windows.Forms.ComboBox CTcboxFilterM;
     }
 }
 
