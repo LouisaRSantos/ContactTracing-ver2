@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactTracingF1));
-            this.CTL1 = new System.Windows.Forms.Label();
+            this.CTTitle1 = new System.Windows.Forms.Label();
             this.CTpicbox1 = new System.Windows.Forms.PictureBox();
-            this.CTL2 = new System.Windows.Forms.Label();
+            this.CTTitle2 = new System.Windows.Forms.Label();
             this.CTAbout1 = new System.Windows.Forms.Label();
             this.CTlabelName = new System.Windows.Forms.Label();
             this.CTlabelAge = new System.Windows.Forms.Label();
@@ -174,16 +174,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.CTpicbox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // CTL1
+            // CTTitle1
             // 
-            this.CTL1.AutoSize = true;
-            this.CTL1.BackColor = System.Drawing.Color.Transparent;
-            this.CTL1.Font = new System.Drawing.Font("Franklin Gothic Book", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTL1.Location = new System.Drawing.Point(135, 31);
-            this.CTL1.Name = "CTL1";
-            this.CTL1.Size = new System.Drawing.Size(445, 37);
-            this.CTL1.TabIndex = 0;
-            this.CTL1.Text = "COVID-19 Contract Tracing Form";
+            this.CTTitle1.AutoSize = true;
+            this.CTTitle1.BackColor = System.Drawing.Color.Transparent;
+            this.CTTitle1.Font = new System.Drawing.Font("Franklin Gothic Book", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTTitle1.Location = new System.Drawing.Point(135, 31);
+            this.CTTitle1.Name = "CTTitle1";
+            this.CTTitle1.Size = new System.Drawing.Size(445, 37);
+            this.CTTitle1.TabIndex = 0;
+            this.CTTitle1.Text = "COVID-19 Contract Tracing Form";
             // 
             // CTpicbox1
             // 
@@ -196,16 +196,16 @@
             this.CTpicbox1.TabIndex = 1;
             this.CTpicbox1.TabStop = false;
             // 
-            // CTL2
+            // CTTitle2
             // 
-            this.CTL2.AutoSize = true;
-            this.CTL2.BackColor = System.Drawing.Color.Transparent;
-            this.CTL2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTL2.Location = new System.Drawing.Point(139, 68);
-            this.CTL2.Name = "CTL2";
-            this.CTL2.Size = new System.Drawing.Size(1200, 32);
-            this.CTL2.TabIndex = 2;
-            this.CTL2.Text = resources.GetString("CTL2.Text");
+            this.CTTitle2.AutoSize = true;
+            this.CTTitle2.BackColor = System.Drawing.Color.Transparent;
+            this.CTTitle2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTTitle2.Location = new System.Drawing.Point(139, 68);
+            this.CTTitle2.Name = "CTTitle2";
+            this.CTTitle2.Size = new System.Drawing.Size(1200, 32);
+            this.CTTitle2.TabIndex = 2;
+            this.CTTitle2.Text = resources.GetString("CTTitle2.Text");
             // 
             // CTAbout1
             // 
@@ -1989,9 +1989,9 @@
             this.Controls.Add(this.CTlabelAge);
             this.Controls.Add(this.CTlabelName);
             this.Controls.Add(this.CTAbout1);
-            this.Controls.Add(this.CTL2);
+            this.Controls.Add(this.CTTitle2);
             this.Controls.Add(this.CTpicbox1);
-            this.Controls.Add(this.CTL1);
+            this.Controls.Add(this.CTTitle1);
             this.Name = "ContactTracingF1";
             this.Text = "Contact Tracing Form";
             ((System.ComponentModel.ISupportInitialize)(this.CTpicbox1)).EndInit();
@@ -2002,9 +2002,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label CTL1;
+        private System.Windows.Forms.Label CTTitle1;
         private System.Windows.Forms.PictureBox CTpicbox1;
-        private System.Windows.Forms.Label CTL2;
+        private System.Windows.Forms.Label CTTitle2;
         private System.Windows.Forms.Label CTAbout1;
         private System.Windows.Forms.Label CTlabelName;
         private System.Windows.Forms.Label CTlabelAge;

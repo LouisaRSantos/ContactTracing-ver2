@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="CTpicbox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="CTpicbox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAhEAAAISCAYAAAByCp28AAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
         vQd4XNW1PX4tybKsrpE0vfei3t3l3o2xsbFpoRMCIQ2Sl5AeCCEFCCEhjRQCKZDwAiSQEAgl9B56MbZl
@@ -6803,4 +6803,10 @@
         /brrrntH5Wv4Wr6H7+U0OC1OczZ5WWSR5V9CBOH/A0a0o4ujATRXAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="CTtimer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>33</value>
+  </metadata>
 </root>

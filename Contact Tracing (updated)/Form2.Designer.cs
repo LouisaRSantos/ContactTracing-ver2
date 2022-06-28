@@ -28,67 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactTracingF2));
-            this.btnopen = new System.Windows.Forms.Button();
-            this.T1 = new System.Windows.Forms.TextBox();
-            this.btnsave = new System.Windows.Forms.Button();
-            this.cbY = new System.Windows.Forms.ComboBox();
-            this.cbD = new System.Windows.Forms.ComboBox();
-            this.cbM = new System.Windows.Forms.ComboBox();
-            this.btnstart = new System.Windows.Forms.Button();
-            this.picbox1 = new System.Windows.Forms.PictureBox();
-            this.cbox1 = new System.Windows.Forms.ComboBox();
-            this.Lcam = new System.Windows.Forms.Label();
-            this.CTpicbox1 = new System.Windows.Forms.PictureBox();
-            this.CTL1 = new System.Windows.Forms.Label();
-            this.CTL2 = new System.Windows.Forms.Label();
-            this.CTlabelAbout8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picbox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CTpicbox1)).BeginInit();
+            this.CTbtnOpen = new System.Windows.Forms.Button();
+            this.TxtBoxQR = new System.Windows.Forms.TextBox();
+            this.CTbtnSave2 = new System.Windows.Forms.Button();
+            this.CTcboxYear2 = new System.Windows.Forms.ComboBox();
+            this.CTcboxDateD2 = new System.Windows.Forms.ComboBox();
+            this.CTcboxDateM2 = new System.Windows.Forms.ComboBox();
+            this.CTbtnScan = new System.Windows.Forms.Button();
+            this.CTpicboxQR = new System.Windows.Forms.PictureBox();
+            this.CTcboxCamera = new System.Windows.Forms.ComboBox();
+            this.CTLabelCamera = new System.Windows.Forms.Label();
+            this.CTpicbox2 = new System.Windows.Forms.PictureBox();
+            this.CTTitle3 = new System.Windows.Forms.Label();
+            this.CTTitle4 = new System.Windows.Forms.Label();
+            this.CTlabelAbout11 = new System.Windows.Forms.Label();
+            this.CTLabelDate2 = new System.Windows.Forms.Label();
+            this.CTtimer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.CTpicboxQR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CTpicbox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnopen
+            // CTbtnOpen
             // 
-            this.btnopen.Location = new System.Drawing.Point(329, 124);
-            this.btnopen.Name = "btnopen";
-            this.btnopen.Size = new System.Drawing.Size(75, 25);
-            this.btnopen.TabIndex = 22;
-            this.btnopen.Text = "open";
-            this.btnopen.UseVisualStyleBackColor = true;
+            this.CTbtnOpen.Location = new System.Drawing.Point(329, 133);
+            this.CTbtnOpen.Name = "CTbtnOpen";
+            this.CTbtnOpen.Size = new System.Drawing.Size(75, 25);
+            this.CTbtnOpen.TabIndex = 22;
+            this.CTbtnOpen.Text = "Open";
+            this.CTbtnOpen.UseVisualStyleBackColor = true;
             // 
-            // T1
+            // TxtBoxQR
             // 
-            this.T1.Location = new System.Drawing.Point(419, 216);
-            this.T1.Multiline = true;
-            this.T1.Name = "T1";
-            this.T1.Size = new System.Drawing.Size(241, 301);
-            this.T1.TabIndex = 21;
+            this.TxtBoxQR.Location = new System.Drawing.Point(426, 223);
+            this.TxtBoxQR.Multiline = true;
+            this.TxtBoxQR.Name = "TxtBoxQR";
+            this.TxtBoxQR.Size = new System.Drawing.Size(241, 301);
+            this.TxtBoxQR.TabIndex = 21;
             // 
-            // btnsave
+            // CTbtnSave2
             // 
-            this.btnsave.Location = new System.Drawing.Point(586, 526);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(75, 23);
-            this.btnsave.TabIndex = 20;
-            this.btnsave.Text = "SAVE";
-            this.btnsave.UseVisualStyleBackColor = true;
+            this.CTbtnSave2.Location = new System.Drawing.Point(593, 533);
+            this.CTbtnSave2.Name = "CTbtnSave2";
+            this.CTbtnSave2.Size = new System.Drawing.Size(75, 23);
+            this.CTbtnSave2.TabIndex = 20;
+            this.CTbtnSave2.Text = "SAVE";
+            this.CTbtnSave2.UseVisualStyleBackColor = true;
             // 
-            // cbY
+            // CTcboxYear2
             // 
-            this.cbY.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbY.FormattingEnabled = true;
-            this.cbY.Items.AddRange(new object[] {
-            "2022"});
-            this.cbY.Location = new System.Drawing.Point(586, 126);
-            this.cbY.Name = "cbY";
-            this.cbY.Size = new System.Drawing.Size(74, 21);
-            this.cbY.TabIndex = 19;
+            this.CTcboxYear2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CTcboxYear2.FormattingEnabled = true;
+            this.CTcboxYear2.Items.AddRange(new object[] {
+            "2021",
+            "2022",
+            "2023"});
+            this.CTcboxYear2.Location = new System.Drawing.Point(593, 135);
+            this.CTcboxYear2.Name = "CTcboxYear2";
+            this.CTcboxYear2.Size = new System.Drawing.Size(74, 21);
+            this.CTcboxYear2.TabIndex = 19;
             // 
-            // cbD
+            // CTcboxDateD2
             // 
-            this.cbD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbD.FormattingEnabled = true;
-            this.cbD.Items.AddRange(new object[] {
+            this.CTcboxDateD2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CTcboxDateD2.FormattingEnabled = true;
+            this.CTcboxDateD2.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -120,16 +125,16 @@
             "29",
             "30",
             "31"});
-            this.cbD.Location = new System.Drawing.Point(503, 126);
-            this.cbD.Name = "cbD";
-            this.cbD.Size = new System.Drawing.Size(74, 21);
-            this.cbD.TabIndex = 18;
+            this.CTcboxDateD2.Location = new System.Drawing.Point(509, 135);
+            this.CTcboxDateD2.Name = "CTcboxDateD2";
+            this.CTcboxDateD2.Size = new System.Drawing.Size(74, 21);
+            this.CTcboxDateD2.TabIndex = 18;
             // 
-            // cbM
+            // CTcboxDateM2
             // 
-            this.cbM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbM.FormattingEnabled = true;
-            this.cbM.Items.AddRange(new object[] {
+            this.CTcboxDateM2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CTcboxDateM2.FormattingEnabled = true;
+            this.CTcboxDateM2.Items.AddRange(new object[] {
             "January",
             "February",
             "March",
@@ -142,114 +147,135 @@
             "October",
             "November",
             "December"});
-            this.cbM.Location = new System.Drawing.Point(419, 126);
-            this.cbM.Name = "cbM";
-            this.cbM.Size = new System.Drawing.Size(74, 21);
-            this.cbM.TabIndex = 17;
+            this.CTcboxDateM2.Location = new System.Drawing.Point(425, 135);
+            this.CTcboxDateM2.Name = "CTcboxDateM2";
+            this.CTcboxDateM2.Size = new System.Drawing.Size(74, 21);
+            this.CTcboxDateM2.TabIndex = 17;
             // 
-            // btnstart
+            // CTbtnScan
             // 
-            this.btnstart.Location = new System.Drawing.Point(419, 165);
-            this.btnstart.Name = "btnstart";
-            this.btnstart.Size = new System.Drawing.Size(75, 25);
-            this.btnstart.TabIndex = 15;
-            this.btnstart.Text = "SCAN";
-            this.btnstart.UseVisualStyleBackColor = true;
+            this.CTbtnScan.Location = new System.Drawing.Point(426, 172);
+            this.CTbtnScan.Name = "CTbtnScan";
+            this.CTbtnScan.Size = new System.Drawing.Size(75, 25);
+            this.CTbtnScan.TabIndex = 15;
+            this.CTbtnScan.Text = "SCAN";
+            this.CTbtnScan.UseVisualStyleBackColor = true;
+            this.CTbtnScan.Click += new System.EventHandler(this.CTbtnScan_Click);
             // 
-            // picbox1
+            // CTpicboxQR
             // 
-            this.picbox1.Location = new System.Drawing.Point(25, 165);
-            this.picbox1.Name = "picbox1";
-            this.picbox1.Size = new System.Drawing.Size(379, 352);
-            this.picbox1.TabIndex = 14;
-            this.picbox1.TabStop = false;
+            this.CTpicboxQR.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CTpicboxQR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.CTpicboxQR.Location = new System.Drawing.Point(25, 172);
+            this.CTpicboxQR.Name = "CTpicboxQR";
+            this.CTpicboxQR.Size = new System.Drawing.Size(379, 352);
+            this.CTpicboxQR.TabIndex = 14;
+            this.CTpicboxQR.TabStop = false;
             // 
-            // cbox1
+            // CTcboxCamera
             // 
-            this.cbox1.FormattingEnabled = true;
-            this.cbox1.Location = new System.Drawing.Point(87, 126);
-            this.cbox1.Name = "cbox1";
-            this.cbox1.Size = new System.Drawing.Size(231, 21);
-            this.cbox1.TabIndex = 13;
+            this.CTcboxCamera.FormattingEnabled = true;
+            this.CTcboxCamera.Location = new System.Drawing.Point(87, 135);
+            this.CTcboxCamera.Name = "CTcboxCamera";
+            this.CTcboxCamera.Size = new System.Drawing.Size(231, 21);
+            this.CTcboxCamera.TabIndex = 13;
             // 
-            // Lcam
+            // CTLabelCamera
             // 
-            this.Lcam.AutoSize = true;
-            this.Lcam.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lcam.Location = new System.Drawing.Point(26, 129);
-            this.Lcam.Name = "Lcam";
-            this.Lcam.Size = new System.Drawing.Size(55, 17);
-            this.Lcam.TabIndex = 12;
-            this.Lcam.Text = "Camera:";
+            this.CTLabelCamera.AutoSize = true;
+            this.CTLabelCamera.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTLabelCamera.Location = new System.Drawing.Point(26, 138);
+            this.CTLabelCamera.Name = "CTLabelCamera";
+            this.CTLabelCamera.Size = new System.Drawing.Size(55, 17);
+            this.CTLabelCamera.TabIndex = 12;
+            this.CTLabelCamera.Text = "Camera:";
             // 
-            // CTpicbox1
+            // CTpicbox2
             // 
-            this.CTpicbox1.BackColor = System.Drawing.Color.Transparent;
-            this.CTpicbox1.Image = ((System.Drawing.Image)(resources.GetObject("CTpicbox1.Image")));
-            this.CTpicbox1.Location = new System.Drawing.Point(12, 11);
-            this.CTpicbox1.Name = "CTpicbox1";
-            this.CTpicbox1.Size = new System.Drawing.Size(108, 102);
-            this.CTpicbox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.CTpicbox1.TabIndex = 23;
-            this.CTpicbox1.TabStop = false;
+            this.CTpicbox2.BackColor = System.Drawing.Color.Transparent;
+            this.CTpicbox2.Image = ((System.Drawing.Image)(resources.GetObject("CTpicbox2.Image")));
+            this.CTpicbox2.Location = new System.Drawing.Point(12, 11);
+            this.CTpicbox2.Name = "CTpicbox2";
+            this.CTpicbox2.Size = new System.Drawing.Size(108, 102);
+            this.CTpicbox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CTpicbox2.TabIndex = 23;
+            this.CTpicbox2.TabStop = false;
             // 
-            // CTL1
+            // CTTitle3
             // 
-            this.CTL1.AutoSize = true;
-            this.CTL1.BackColor = System.Drawing.Color.Transparent;
-            this.CTL1.Font = new System.Drawing.Font("Franklin Gothic Book", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTL1.Location = new System.Drawing.Point(132, 24);
-            this.CTL1.Name = "CTL1";
-            this.CTL1.Size = new System.Drawing.Size(445, 37);
-            this.CTL1.TabIndex = 24;
-            this.CTL1.Text = "COVID-19 Contract Tracing Form";
+            this.CTTitle3.AutoSize = true;
+            this.CTTitle3.BackColor = System.Drawing.Color.Transparent;
+            this.CTTitle3.Font = new System.Drawing.Font("Franklin Gothic Book", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTTitle3.Location = new System.Drawing.Point(132, 24);
+            this.CTTitle3.Name = "CTTitle3";
+            this.CTTitle3.Size = new System.Drawing.Size(445, 37);
+            this.CTTitle3.TabIndex = 24;
+            this.CTTitle3.Text = "COVID-19 Contract Tracing Form";
             // 
-            // CTL2
+            // CTTitle4
             // 
-            this.CTL2.AutoSize = true;
-            this.CTL2.BackColor = System.Drawing.Color.Transparent;
-            this.CTL2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTL2.Location = new System.Drawing.Point(136, 69);
-            this.CTL2.Name = "CTL2";
-            this.CTL2.Size = new System.Drawing.Size(531, 32);
-            this.CTL2.TabIndex = 25;
-            this.CTL2.Text = "Instructions: You have the option of either opening or scanning your QRCode. \r\nWa" +
+            this.CTTitle4.AutoSize = true;
+            this.CTTitle4.BackColor = System.Drawing.Color.Transparent;
+            this.CTTitle4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTTitle4.Location = new System.Drawing.Point(136, 69);
+            this.CTTitle4.Name = "CTTitle4";
+            this.CTTitle4.Size = new System.Drawing.Size(531, 32);
+            this.CTTitle4.TabIndex = 25;
+            this.CTTitle4.Text = "Instructions: You have the option of either opening or scanning your QRCode. \r\nWa" +
     "it for the application to read it after clicking the \"Scan\" or \"Open\" button.";
             // 
-            // CTlabelAbout8
+            // CTlabelAbout11
             // 
-            this.CTlabelAbout8.AutoSize = true;
-            this.CTlabelAbout8.BackColor = System.Drawing.Color.Transparent;
-            this.CTlabelAbout8.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelAbout8.Location = new System.Drawing.Point(422, 197);
-            this.CTlabelAbout8.Name = "CTlabelAbout8";
-            this.CTlabelAbout8.Size = new System.Drawing.Size(153, 16);
-            this.CTlabelAbout8.TabIndex = 256;
-            this.CTlabelAbout8.Text = "Your record will display here:";
+            this.CTlabelAbout11.AutoSize = true;
+            this.CTlabelAbout11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.CTlabelAbout11.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTlabelAbout11.Location = new System.Drawing.Point(424, 204);
+            this.CTlabelAbout11.Name = "CTlabelAbout11";
+            this.CTlabelAbout11.Size = new System.Drawing.Size(153, 16);
+            this.CTlabelAbout11.TabIndex = 256;
+            this.CTlabelAbout11.Text = "Your record will display here:";
+            // 
+            // CTLabelDate2
+            // 
+            this.CTLabelDate2.AutoSize = true;
+            this.CTLabelDate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.CTLabelDate2.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTLabelDate2.Location = new System.Drawing.Point(424, 116);
+            this.CTLabelDate2.Name = "CTLabelDate2";
+            this.CTLabelDate2.Size = new System.Drawing.Size(35, 16);
+            this.CTLabelDate2.TabIndex = 257;
+            this.CTLabelDate2.Text = "Date:";
+            // 
+            // CTtimer1
+            // 
+            this.CTtimer1.Tick += new System.EventHandler(this.CTtimer1_Tick);
             // 
             // ContactTracingF2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 557);
-            this.Controls.Add(this.CTlabelAbout8);
-            this.Controls.Add(this.CTL2);
-            this.Controls.Add(this.CTL1);
-            this.Controls.Add(this.CTpicbox1);
-            this.Controls.Add(this.btnopen);
-            this.Controls.Add(this.T1);
-            this.Controls.Add(this.btnsave);
-            this.Controls.Add(this.cbY);
-            this.Controls.Add(this.cbD);
-            this.Controls.Add(this.cbM);
-            this.Controls.Add(this.btnstart);
-            this.Controls.Add(this.picbox1);
-            this.Controls.Add(this.cbox1);
-            this.Controls.Add(this.Lcam);
+            this.ClientSize = new System.Drawing.Size(690, 565);
+            this.Controls.Add(this.CTLabelDate2);
+            this.Controls.Add(this.CTlabelAbout11);
+            this.Controls.Add(this.CTTitle4);
+            this.Controls.Add(this.CTTitle3);
+            this.Controls.Add(this.CTpicbox2);
+            this.Controls.Add(this.CTbtnOpen);
+            this.Controls.Add(this.TxtBoxQR);
+            this.Controls.Add(this.CTbtnSave2);
+            this.Controls.Add(this.CTcboxYear2);
+            this.Controls.Add(this.CTcboxDateD2);
+            this.Controls.Add(this.CTcboxDateM2);
+            this.Controls.Add(this.CTbtnScan);
+            this.Controls.Add(this.CTpicboxQR);
+            this.Controls.Add(this.CTcboxCamera);
+            this.Controls.Add(this.CTLabelCamera);
             this.Name = "ContactTracingF2";
             this.Text = "Contact Tracing Form";
-            ((System.ComponentModel.ISupportInitialize)(this.picbox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CTpicbox1)).EndInit();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ContactTracingF2_Closing);
+            this.Load += new System.EventHandler(this.ContactTracingF2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.CTpicboxQR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CTpicbox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,19 +283,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnopen;
-        private System.Windows.Forms.TextBox T1;
-        private System.Windows.Forms.Button btnsave;
-        private System.Windows.Forms.ComboBox cbY;
-        private System.Windows.Forms.ComboBox cbD;
-        private System.Windows.Forms.ComboBox cbM;
-        private System.Windows.Forms.Button btnstart;
-        private System.Windows.Forms.PictureBox picbox1;
-        private System.Windows.Forms.ComboBox cbox1;
-        private System.Windows.Forms.Label Lcam;
-        private System.Windows.Forms.PictureBox CTpicbox1;
-        private System.Windows.Forms.Label CTL1;
-        private System.Windows.Forms.Label CTL2;
-        private System.Windows.Forms.Label CTlabelAbout8;
+        private System.Windows.Forms.Button CTbtnOpen;
+        private System.Windows.Forms.TextBox TxtBoxQR;
+        private System.Windows.Forms.Button CTbtnSave2;
+        private System.Windows.Forms.ComboBox CTcboxYear2;
+        private System.Windows.Forms.ComboBox CTcboxDateD2;
+        private System.Windows.Forms.ComboBox CTcboxDateM2;
+        private System.Windows.Forms.Button CTbtnScan;
+        private System.Windows.Forms.PictureBox CTpicboxQR;
+        private System.Windows.Forms.ComboBox CTcboxCamera;
+        private System.Windows.Forms.Label CTLabelCamera;
+        private System.Windows.Forms.PictureBox CTpicbox2;
+        private System.Windows.Forms.Label CTTitle3;
+        private System.Windows.Forms.Label CTTitle4;
+        private System.Windows.Forms.Label CTlabelAbout11;
+        private System.Windows.Forms.Label CTLabelDate2;
+        private System.Windows.Forms.Timer CTtimer1;
     }
 }
