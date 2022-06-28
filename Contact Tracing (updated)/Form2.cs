@@ -85,5 +85,23 @@ namespace Contact_Tracing__updated_
             }
             CTtimer1.Start();
         }
+
+        private void CTbtnSave2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string CTDate = CTcboxDateM2.SelectedItem.ToString() + " " + CTcboxDateD2.SelectedItem.ToString() + " " + CTcboxDateY2.SelectedItem.ToString();
+                string CTRecord = TxtBoxQR.Text;
+
+                StreamWriter SaveRecord = new StreamWriter(@"C:\Users\Santos\Documents\Records\" + CTDate + ".txt", true);
+                SaveRecord.WriteLine(CTDate);
+                SaveRecord.WriteLine(CTRecord);
+                SaveRecord.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Please input date.");
+            }
+        }
     }
 }

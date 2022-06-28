@@ -33,7 +33,7 @@
             this.CTbtnOpen = new System.Windows.Forms.Button();
             this.TxtBoxQR = new System.Windows.Forms.TextBox();
             this.CTbtnSave2 = new System.Windows.Forms.Button();
-            this.CTcboxYear2 = new System.Windows.Forms.ComboBox();
+            this.CTcboxDateY2 = new System.Windows.Forms.ComboBox();
             this.CTcboxDateD2 = new System.Windows.Forms.ComboBox();
             this.CTcboxDateM2 = new System.Windows.Forms.ComboBox();
             this.CTbtnScan = new System.Windows.Forms.Button();
@@ -76,19 +76,20 @@
             this.CTbtnSave2.TabIndex = 20;
             this.CTbtnSave2.Text = "SAVE";
             this.CTbtnSave2.UseVisualStyleBackColor = true;
+            this.CTbtnSave2.Click += new System.EventHandler(this.CTbtnSave2_Click);
             // 
-            // CTcboxYear2
+            // CTcboxDateY2
             // 
-            this.CTcboxYear2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CTcboxYear2.FormattingEnabled = true;
-            this.CTcboxYear2.Items.AddRange(new object[] {
+            this.CTcboxDateY2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CTcboxDateY2.FormattingEnabled = true;
+            this.CTcboxDateY2.Items.AddRange(new object[] {
             "2021",
             "2022",
             "2023"});
-            this.CTcboxYear2.Location = new System.Drawing.Point(593, 135);
-            this.CTcboxYear2.Name = "CTcboxYear2";
-            this.CTcboxYear2.Size = new System.Drawing.Size(74, 21);
-            this.CTcboxYear2.TabIndex = 19;
+            this.CTcboxDateY2.Location = new System.Drawing.Point(593, 135);
+            this.CTcboxDateY2.Name = "CTcboxDateY2";
+            this.CTcboxDateY2.Size = new System.Drawing.Size(74, 21);
+            this.CTcboxDateY2.TabIndex = 19;
             // 
             // CTcboxDateD2
             // 
@@ -264,7 +265,7 @@
             this.Controls.Add(this.CTbtnOpen);
             this.Controls.Add(this.TxtBoxQR);
             this.Controls.Add(this.CTbtnSave2);
-            this.Controls.Add(this.CTcboxYear2);
+            this.Controls.Add(this.CTcboxDateY2);
             this.Controls.Add(this.CTcboxDateD2);
             this.Controls.Add(this.CTcboxDateM2);
             this.Controls.Add(this.CTbtnScan);
@@ -287,7 +288,7 @@
         private System.Windows.Forms.Button CTbtnOpen;
         private System.Windows.Forms.TextBox TxtBoxQR;
         private System.Windows.Forms.Button CTbtnSave2;
-        private System.Windows.Forms.ComboBox CTcboxYear2;
+        private System.Windows.Forms.ComboBox CTcboxDateY2;
         private System.Windows.Forms.ComboBox CTcboxDateD2;
         private System.Windows.Forms.ComboBox CTcboxDateM2;
         private System.Windows.Forms.Button CTbtnScan;
