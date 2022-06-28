@@ -13,9 +13,14 @@ namespace Contact_Tracing__updated_
 {
     public partial class ContactTracingF1 : Form
     {
+        public static ContactTracingF1 instance;
+        public ListBox list;
+
         public ContactTracingF1()
         {
             InitializeComponent();
+            instance = this;
+            list = CTList1;
         }
 
         private void CTbtnSave_Click(object sender, EventArgs e)

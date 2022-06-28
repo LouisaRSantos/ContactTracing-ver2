@@ -18,6 +18,7 @@ namespace Contact_Tracing__updated_
 {
     public partial class ContactTracingF2 : Form
     {
+        public static ContactTracingF2 instance;
 
         private FilterInfoCollection Capture_Device;
         private VideoCaptureDevice Final_Frame;
@@ -25,6 +26,7 @@ namespace Contact_Tracing__updated_
         public ContactTracingF2()
         {
             InitializeComponent();
+            instance = this;
         }
 
         private void ContactTracingF2_Load(object sender, EventArgs e)
@@ -97,11 +99,17 @@ namespace Contact_Tracing__updated_
                 SaveRecord.WriteLine(CTDate);
                 SaveRecord.WriteLine(CTRecord);
                 SaveRecord.Close();
+                MessageBox.Show("File Saved");
             }
             catch
             {
                 MessageBox.Show("Please input date.");
             }
+
+            string Date = CTcboxDateM2.SelectedItem.ToString() + " " + CTcboxDateD2.SelectedItem.ToString() + " " + CTcboxDateY2.SelectedItem.ToString();
+            StreamReader ReadRecord = new StreamReader(@"C:\Users\Santos\Documents\Records\" + Date + ".txt", true);
+            ContactTracingF1.instance.list.Items.Add(ReadRecord.ReadLine());
+            ReadRecord.Close();
         }
     }
 }
