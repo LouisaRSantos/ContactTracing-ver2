@@ -106,10 +106,18 @@ namespace Contact_Tracing__updated_
                 MessageBox.Show("Please input date.");
             }
 
-            string Date = CTcboxDateM2.SelectedItem.ToString() + " " + CTcboxDateD2.SelectedItem.ToString() + " " + CTcboxDateY2.SelectedItem.ToString();
-            StreamReader ReadRecord = new StreamReader(@"C:\Users\Santos\Documents\Records\" + Date + ".txt", true);
-            ContactTracingF1.instance.list.Items.Add(ReadRecord.ReadLine());
-            ReadRecord.Close();
+            try
+            {
+                string Date = CTcboxDateM2.SelectedItem.ToString() + " " + CTcboxDateD2.SelectedItem.ToString() + " " + CTcboxDateY2.SelectedItem.ToString();
+                StreamReader ReadRecord = new StreamReader(@"C:\Users\Santos\Documents\Records\" + Date + ".txt", true);
+                ContactTracingF1.instance.list.Items.Add(ReadRecord.ReadLine());
+                ReadRecord.Close();
+            }
+            catch 
+            {
+                
+            }
+
         }
     }
 }

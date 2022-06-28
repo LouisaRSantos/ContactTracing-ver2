@@ -1849,6 +1849,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.CTbtnNext);
             this.Controls.Add(this.CTasterterisk4);
@@ -1992,6 +1993,7 @@
             this.Controls.Add(this.CTTitle2);
             this.Controls.Add(this.CTpicbox1);
             this.Controls.Add(this.CTTitle1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ContactTracingF1";
             this.Text = "Contact Tracing Form";
             ((System.ComponentModel.ISupportInitialize)(this.CTpicbox1)).EndInit();

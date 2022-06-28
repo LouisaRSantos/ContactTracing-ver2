@@ -46,6 +46,9 @@
             this.CTlabelAbout11 = new System.Windows.Forms.Label();
             this.CTLabelDate2 = new System.Windows.Forms.Label();
             this.CTtimer1 = new System.Windows.Forms.Timer(this.components);
+            this.CTasterterisk6 = new System.Windows.Forms.Label();
+            this.CTasterterisk5 = new System.Windows.Forms.Label();
+            this.CTlabelAbout12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CTpicboxQR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CTpicbox2)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +73,7 @@
             // 
             // CTbtnSave2
             // 
-            this.CTbtnSave2.Location = new System.Drawing.Point(593, 533);
+            this.CTbtnSave2.Location = new System.Drawing.Point(593, 536);
             this.CTbtnSave2.Name = "CTbtnSave2";
             this.CTbtnSave2.Size = new System.Drawing.Size(75, 23);
             this.CTbtnSave2.TabIndex = 20;
@@ -185,6 +188,7 @@
             // CTLabelCamera
             // 
             this.CTLabelCamera.AutoSize = true;
+            this.CTLabelCamera.BackColor = System.Drawing.Color.Transparent;
             this.CTLabelCamera.Font = new System.Drawing.Font("Franklin Gothic Book", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CTLabelCamera.Location = new System.Drawing.Point(26, 138);
             this.CTLabelCamera.Name = "CTLabelCamera";
@@ -252,11 +256,50 @@
             // 
             this.CTtimer1.Tick += new System.EventHandler(this.CTtimer1_Tick);
             // 
+            // CTasterterisk6
+            // 
+            this.CTasterterisk6.AutoSize = true;
+            this.CTasterterisk6.BackColor = System.Drawing.Color.Transparent;
+            this.CTasterterisk6.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTasterterisk6.ForeColor = System.Drawing.Color.Red;
+            this.CTasterterisk6.Location = new System.Drawing.Point(438, 540);
+            this.CTasterterisk6.Name = "CTasterterisk6";
+            this.CTasterterisk6.Size = new System.Drawing.Size(15, 16);
+            this.CTasterterisk6.TabIndex = 260;
+            this.CTasterterisk6.Text = "*";
+            // 
+            // CTasterterisk5
+            // 
+            this.CTasterterisk5.AutoSize = true;
+            this.CTasterterisk5.BackColor = System.Drawing.Color.Transparent;
+            this.CTasterterisk5.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTasterterisk5.ForeColor = System.Drawing.Color.Red;
+            this.CTasterterisk5.Location = new System.Drawing.Point(14, 540);
+            this.CTasterterisk5.Name = "CTasterterisk5";
+            this.CTasterterisk5.Size = new System.Drawing.Size(15, 16);
+            this.CTasterterisk5.TabIndex = 259;
+            this.CTasterterisk5.Text = "*";
+            // 
+            // CTlabelAbout12
+            // 
+            this.CTlabelAbout12.AutoSize = true;
+            this.CTlabelAbout12.BackColor = System.Drawing.Color.Transparent;
+            this.CTlabelAbout12.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTlabelAbout12.Location = new System.Drawing.Point(26, 540);
+            this.CTlabelAbout12.Name = "CTlabelAbout12";
+            this.CTlabelAbout12.Size = new System.Drawing.Size(415, 16);
+            this.CTlabelAbout12.TabIndex = 258;
+            this.CTlabelAbout12.Text = "Note: If the scanner cannot detect your QRCode, use the \"Open\" option instead.";
+            // 
             // ContactTracingF2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 565);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(690, 571);
+            this.Controls.Add(this.CTasterterisk6);
+            this.Controls.Add(this.CTasterterisk5);
+            this.Controls.Add(this.CTlabelAbout12);
             this.Controls.Add(this.CTLabelDate2);
             this.Controls.Add(this.CTlabelAbout11);
             this.Controls.Add(this.CTTitle4);
@@ -272,7 +315,10 @@
             this.Controls.Add(this.CTpicboxQR);
             this.Controls.Add(this.CTcboxCamera);
             this.Controls.Add(this.CTLabelCamera);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ContactTracingF2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing Form";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ContactTracingF2_Closing);
             this.Load += new System.EventHandler(this.ContactTracingF2_Load);
@@ -301,5 +347,8 @@
         private System.Windows.Forms.Label CTlabelAbout11;
         private System.Windows.Forms.Label CTLabelDate2;
         private System.Windows.Forms.Timer CTtimer1;
+        private System.Windows.Forms.Label CTasterterisk6;
+        private System.Windows.Forms.Label CTasterterisk5;
+        private System.Windows.Forms.Label CTlabelAbout12;
     }
 }
