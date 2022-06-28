@@ -167,6 +167,10 @@
             this.CTcboxFilterY = new System.Windows.Forms.ComboBox();
             this.CTcboxFilterD = new System.Windows.Forms.ComboBox();
             this.CTcboxFilterM = new System.Windows.Forms.ComboBox();
+            this.CTasterterisk4 = new System.Windows.Forms.Label();
+            this.CTasterterisk3 = new System.Windows.Forms.Label();
+            this.CTlabelAbout10 = new System.Windows.Forms.Label();
+            this.CTbtnNext = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CTpicbox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1581,7 +1585,7 @@
             // 
             // CTrichtxtbox1
             // 
-            this.CTrichtxtbox1.Location = new System.Drawing.Point(1019, 445);
+            this.CTrichtxtbox1.Location = new System.Drawing.Point(1019, 420);
             this.CTrichtxtbox1.Name = "CTrichtxtbox1";
             this.CTrichtxtbox1.Size = new System.Drawing.Size(326, 225);
             this.CTrichtxtbox1.TabIndex = 253;
@@ -1589,7 +1593,7 @@
             // 
             // CTbtnFilter
             // 
-            this.CTbtnFilter.Location = new System.Drawing.Point(909, 564);
+            this.CTbtnFilter.Location = new System.Drawing.Point(909, 539);
             this.CTbtnFilter.Name = "CTbtnFilter";
             this.CTbtnFilter.Size = new System.Drawing.Size(75, 25);
             this.CTbtnFilter.TabIndex = 251;
@@ -1600,7 +1604,7 @@
             // CTList2
             // 
             this.CTList2.FormattingEnabled = true;
-            this.CTList2.Location = new System.Drawing.Point(664, 596);
+            this.CTList2.Location = new System.Drawing.Point(664, 571);
             this.CTList2.Name = "CTList2";
             this.CTList2.Size = new System.Drawing.Size(320, 69);
             this.CTList2.TabIndex = 250;
@@ -1608,14 +1612,14 @@
             // CTList1
             // 
             this.CTList1.FormattingEnabled = true;
-            this.CTList1.Location = new System.Drawing.Point(664, 446);
+            this.CTList1.Location = new System.Drawing.Point(664, 421);
             this.CTList1.Name = "CTList1";
             this.CTList1.Size = new System.Drawing.Size(320, 108);
             this.CTList1.TabIndex = 247;
             // 
             // CTbtnOpen
             // 
-            this.CTbtnOpen.Location = new System.Drawing.Point(1019, 674);
+            this.CTbtnOpen.Location = new System.Drawing.Point(1019, 649);
             this.CTbtnOpen.Name = "CTbtnOpen";
             this.CTbtnOpen.Size = new System.Drawing.Size(75, 25);
             this.CTbtnOpen.TabIndex = 254;
@@ -1663,7 +1667,7 @@
             this.CTlabelAbout9.AutoSize = true;
             this.CTlabelAbout9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CTlabelAbout9.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CTlabelAbout9.Location = new System.Drawing.Point(661, 423);
+            this.CTlabelAbout9.Location = new System.Drawing.Point(661, 398);
             this.CTlabelAbout9.Name = "CTlabelAbout9";
             this.CTlabelAbout9.Size = new System.Drawing.Size(96, 16);
             this.CTlabelAbout9.TabIndex = 258;
@@ -1727,7 +1731,7 @@
             "2020",
             "2021",
             "2022"});
-            this.CTcboxFilterY.Location = new System.Drawing.Point(822, 565);
+            this.CTcboxFilterY.Location = new System.Drawing.Point(822, 540);
             this.CTcboxFilterY.Name = "CTcboxFilterY";
             this.CTcboxFilterY.Size = new System.Drawing.Size(73, 21);
             this.CTcboxFilterY.TabIndex = 262;
@@ -1768,7 +1772,7 @@
             "29",
             "30",
             "31"});
-            this.CTcboxFilterD.Location = new System.Drawing.Point(743, 565);
+            this.CTcboxFilterD.Location = new System.Drawing.Point(743, 540);
             this.CTcboxFilterD.Name = "CTcboxFilterD";
             this.CTcboxFilterD.Size = new System.Drawing.Size(73, 21);
             this.CTcboxFilterD.TabIndex = 261;
@@ -1790,17 +1794,65 @@
             "October",
             "November",
             "December"});
-            this.CTcboxFilterM.Location = new System.Drawing.Point(664, 565);
+            this.CTcboxFilterM.Location = new System.Drawing.Point(664, 540);
             this.CTcboxFilterM.Name = "CTcboxFilterM";
             this.CTcboxFilterM.Size = new System.Drawing.Size(73, 21);
             this.CTcboxFilterM.TabIndex = 263;
+            // 
+            // CTasterterisk4
+            // 
+            this.CTasterterisk4.AutoSize = true;
+            this.CTasterterisk4.BackColor = System.Drawing.Color.Transparent;
+            this.CTasterterisk4.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTasterterisk4.ForeColor = System.Drawing.Color.Red;
+            this.CTasterterisk4.Location = new System.Drawing.Point(1176, 683);
+            this.CTasterterisk4.Name = "CTasterterisk4";
+            this.CTasterterisk4.Size = new System.Drawing.Size(15, 16);
+            this.CTasterterisk4.TabIndex = 266;
+            this.CTasterterisk4.Text = "*";
+            // 
+            // CTasterterisk3
+            // 
+            this.CTasterterisk3.AutoSize = true;
+            this.CTasterterisk3.BackColor = System.Drawing.Color.Transparent;
+            this.CTasterterisk3.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTasterterisk3.ForeColor = System.Drawing.Color.Red;
+            this.CTasterterisk3.Location = new System.Drawing.Point(661, 683);
+            this.CTasterterisk3.Name = "CTasterterisk3";
+            this.CTasterterisk3.Size = new System.Drawing.Size(15, 16);
+            this.CTasterterisk3.TabIndex = 265;
+            this.CTasterterisk3.Text = "*";
+            // 
+            // CTlabelAbout10
+            // 
+            this.CTlabelAbout10.AutoSize = true;
+            this.CTlabelAbout10.BackColor = System.Drawing.Color.Transparent;
+            this.CTlabelAbout10.Font = new System.Drawing.Font("Franklin Gothic Book", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CTlabelAbout10.Location = new System.Drawing.Point(673, 683);
+            this.CTlabelAbout10.Name = "CTlabelAbout10";
+            this.CTlabelAbout10.Size = new System.Drawing.Size(510, 16);
+            this.CTlabelAbout10.TabIndex = 264;
+            this.CTlabelAbout10.Text = "Please click the \"Next\" button if you will be using QR Code in answering the form" +
+    ". ";
+            // 
+            // CTbtnNext
+            // 
+            this.CTbtnNext.Location = new System.Drawing.Point(1270, 674);
+            this.CTbtnNext.Name = "CTbtnNext";
+            this.CTbtnNext.Size = new System.Drawing.Size(75, 25);
+            this.CTbtnNext.TabIndex = 267;
+            this.CTbtnNext.Text = "Next";
+            this.CTbtnNext.UseVisualStyleBackColor = true;
             // 
             // ContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1354, 733);
+            this.Controls.Add(this.CTbtnNext);
+            this.Controls.Add(this.CTasterterisk4);
+            this.Controls.Add(this.CTasterterisk3);
+            this.Controls.Add(this.CTlabelAbout10);
             this.Controls.Add(this.CTcboxFilterM);
             this.Controls.Add(this.CTcboxFilterY);
             this.Controls.Add(this.CTcboxFilterD);
@@ -2087,6 +2139,10 @@
         private System.Windows.Forms.ComboBox CTcboxFilterY;
         private System.Windows.Forms.ComboBox CTcboxFilterD;
         private System.Windows.Forms.ComboBox CTcboxFilterM;
+        private System.Windows.Forms.Label CTasterterisk4;
+        private System.Windows.Forms.Label CTasterterisk3;
+        private System.Windows.Forms.Label CTlabelAbout10;
+        private System.Windows.Forms.Button CTbtnNext;
     }
 }
 
