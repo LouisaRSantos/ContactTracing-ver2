@@ -16,7 +16,7 @@ namespace Contact_Tracing__updated_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ContactTracing());
+            Application.Run(new ContactTracingF1());
         }
     }
 }

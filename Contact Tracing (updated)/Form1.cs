@@ -11,9 +11,9 @@ using System.IO;
 
 namespace Contact_Tracing__updated_
 {
-    public partial class ContactTracing : Form
+    public partial class ContactTracingF1 : Form
     {
-        public ContactTracing()
+        public ContactTracingF1()
         {
             InitializeComponent();
         }
@@ -184,6 +184,12 @@ namespace Contact_Tracing__updated_
             {
                 MessageBox.Show("No file available");
             }
+        }
+
+        private void CTbtnNext_Click(object sender, EventArgs e)
+        {
+            ContactTracingF2 form2 = new ContactTracingF2();
+            form2.Show();
         }
     }
 }

@@ -2,8 +2,9 @@ c:\users\santos\documents\visual studio 2013\Projects\Contact Tracing (updated)\
 c:\users\santos\documents\visual studio 2013\Projects\Contact Tracing (updated)\Contact Tracing (updated)\bin\Debug\Contact Tracing (updated).exe
 c:\users\santos\documents\visual studio 2013\Projects\Contact Tracing (updated)\Contact Tracing (updated)\bin\Debug\Contact Tracing (updated).pdb
 c:\users\santos\documents\visual studio 2013\Projects\Contact Tracing (updated)\Contact Tracing (updated)\obj\Debug\Contact Tracing (updated).csprojResolveAssemblyReference.cache
-c:\users\santos\documents\visual studio 2013\Projects\Contact Tracing (updated)\Contact Tracing (updated)\obj\Debug\Contact_Tracing__updated_.ContactTracing.resources
 c:\users\santos\documents\visual studio 2013\Projects\Contact Tracing (updated)\Contact Tracing (updated)\obj\Debug\Contact_Tracing__updated_.Properties.Resources.resources
 c:\users\santos\documents\visual studio 2013\Projects\Contact Tracing (updated)\Contact Tracing (updated)\obj\Debug\Contact Tracing (updated).csproj.GenerateResource.Cache
 c:\users\santos\documents\visual studio 2013\Projects\Contact Tracing (updated)\Contact Tracing (updated)\obj\Debug\Contact Tracing (updated).exe
 c:\users\santos\documents\visual studio 2013\Projects\Contact Tracing (updated)\Contact Tracing (updated)\obj\Debug\Contact Tracing (updated).pdb
+C:\Users\Santos\documents\visual studio 2013\Projects\Contact Tracing (updated)\Contact Tracing (updated)\obj\Debug\Contact_Tracing__updated_.ContactTracingF1.resources
+C:\Users\Santos\documents\visual studio 2013\Projects\Contact Tracing (updated)\Contact Tracing (updated)\obj\Debug\Contact_Tracing__updated_.ContactTracingF2.resources

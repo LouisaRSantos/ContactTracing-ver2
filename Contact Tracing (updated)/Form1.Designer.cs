@@ -1,6 +1,6 @@
 ﻿namespace Contact_Tracing__updated_
 {
-    partial class ContactTracing
+    partial class ContactTracingF1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactTracing));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactTracingF1));
             this.CTL1 = new System.Windows.Forms.Label();
             this.CTpicbox1 = new System.Windows.Forms.PictureBox();
             this.CTL2 = new System.Windows.Forms.Label();
@@ -1843,8 +1843,9 @@
             this.CTbtnNext.TabIndex = 267;
             this.CTbtnNext.Text = "Next";
             this.CTbtnNext.UseVisualStyleBackColor = true;
+            this.CTbtnNext.Click += new System.EventHandler(this.CTbtnNext_Click);
             // 
-            // ContactTracing
+            // ContactTracingF1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1991,7 +1992,7 @@
             this.Controls.Add(this.CTL2);
             this.Controls.Add(this.CTpicbox1);
             this.Controls.Add(this.CTL1);
-            this.Name = "ContactTracing";
+            this.Name = "ContactTracingF1";
             this.Text = "Contact Tracing Form";
             ((System.ComponentModel.ISupportInitialize)(this.CTpicbox1)).EndInit();
             this.ResumeLayout(false);
