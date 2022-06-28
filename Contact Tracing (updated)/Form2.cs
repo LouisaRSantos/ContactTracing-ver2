@@ -71,5 +71,19 @@ namespace Contact_Tracing__updated_
                 }
             }
         }
+
+        private void CTbtnOpen_Click(object sender, EventArgs e)
+        {
+            CTtimer1.Stop();
+            Final_Frame.Stop();
+            var dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                var reader = new BarcodeReader();
+                var imgfile = Image.FromFile(dialog.FileName) as Bitmap;
+                CTpicboxQR.Image = imgfile;
+            }
+            CTtimer1.Start();
+        }
     }
 }

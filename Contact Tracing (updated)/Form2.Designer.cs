@@ -58,6 +58,7 @@
             this.CTbtnOpen.TabIndex = 22;
             this.CTbtnOpen.Text = "Open";
             this.CTbtnOpen.UseVisualStyleBackColor = true;
+            this.CTbtnOpen.Click += new System.EventHandler(this.CTbtnOpen_Click);
             // 
             // TxtBoxQR
             // 
