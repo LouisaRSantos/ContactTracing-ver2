@@ -20,8 +20,8 @@ namespace Contact_Tracing__updated_
     {
         public static ContactTracingF2 instance;
 
-        private FilterInfoCollection Capture_Device;
-        private VideoCaptureDevice Final_Frame;
+        private FilterInfoCollection DeviceCamera;
+        private VideoCaptureDevice VideoFrame;
 
         public ContactTracingF2()
         {
@@ -31,20 +31,20 @@ namespace Contact_Tracing__updated_
 
         private void ContactTracingF2_Load(object sender, EventArgs e)
         {
-            Capture_Device = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            foreach (FilterInfo Device in Capture_Device)
+            DeviceCamera = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo Device in DeviceCamera)
                 CTcboxCamera.Items.Add(Device.Name);
 
             CTcboxCamera.SelectedIndex = 0;
 
-            Final_Frame = new VideoCaptureDevice();
+            VideoFrame = new VideoCaptureDevice();
         }
 
         private void CTbtnScan_Click(object sender, EventArgs e)
         {
-            Final_Frame = new VideoCaptureDevice(Capture_Device[CTcboxCamera.SelectedIndex].MonikerString);
-            Final_Frame.NewFrame += Final_Frame_NewFrame;
-            Final_Frame.Start();
+            VideoFrame = new VideoCaptureDevice(DeviceCamera[CTcboxCamera.SelectedIndex].MonikerString);
+            VideoFrame.NewFrame += Final_Frame_NewFrame;
+            VideoFrame.Start();
             CTtimer1.Start();
         }
         private void Final_Frame_NewFrame(object sender, NewFrameEventArgs eventArgs)
@@ -54,9 +54,9 @@ namespace Contact_Tracing__updated_
 
         private void ContactTracingF2_Closing(object sender, FormClosingEventArgs e)
         {
-            if (Final_Frame.IsRunning == true)
+            if (VideoFrame.IsRunning == true)
             {
-                Final_Frame.Stop();
+                VideoFrame.Stop();
             }
 
         }
@@ -77,7 +77,7 @@ namespace Contact_Tracing__updated_
         private void CTbtnOpen_Click(object sender, EventArgs e)
         {
             CTtimer1.Stop();
-            Final_Frame.Stop();
+            VideoFrame.Stop();
             var dialog = new OpenFileDialog();
             if (dialog.ShowDialog() == DialogResult.OK)
             {
