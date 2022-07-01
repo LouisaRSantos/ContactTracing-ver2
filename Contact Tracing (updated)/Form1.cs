@@ -14,13 +14,87 @@ namespace Contact_Tracing__updated_
     public partial class ContactTracingF1 : Form
     {
         public static ContactTracingF1 instance;
-        public ListBox list;
+        public TextBox FName;
+        public TextBox MName;
+        public TextBox Surname;
+        public TextBox Age;
+        public TextBox Number;
+        public TextBox Email;
+        public TextBox BPlace;
+        public TextBox CAddress;
+        public TextBox MFName;
+        public TextBox MMName;
+        public TextBox MSurname;
+        public TextBox MNumber;
+        public TextBox MCAddress;
+        public TextBox FFName;
+        public TextBox FMName;
+        public TextBox FSurname;
+        public TextBox FNumber;
+        public TextBox FCAdress;
+        public TextBox P1Name;
+        public TextBox P1Date;
+        public TextBox P1Time;
+        public TextBox P1Loc;
+        public TextBox P2Name;
+        public TextBox P2Date;
+        public TextBox P2Time;
+        public TextBox P2Loc;
+        public TextBox P3Name;
+        public TextBox P3Date;
+        public TextBox P3Time;
+        public TextBox P3Loc;
+        public TextBox P4Name;
+        public TextBox P4Date;
+        public TextBox P4Time;
+        public TextBox P4Loc;
+        public TextBox P5Name;
+        public TextBox P5Date;
+        public TextBox P5Time;
+        public TextBox P5Loc;
 
         public ContactTracingF1()
         {
             InitializeComponent();
             instance = this;
-            list = CTList1;
+            FName = TxtBoxFN;
+            MName = TxtBoxMN;
+            Surname = TxtBoxSN;
+            Age = TxtBoxAge;
+            Number = TxtBoxPN;
+            Email = TxtBoxEmail;
+            BPlace = TxtBoxBP;
+            CAddress = TxtBoxCA;
+            MFName = TxtBoxMotherFN;
+            MMName = TxtBoxMotherMN;
+            MSurname = TxtBoxMotherSN;
+            MNumber = TxtBoxMotherPN;
+            MCAddress = TxtBoxMotherCA;
+            FFName = TxtBoxFatherFN;
+            FMName = TxtBoxFatherMN;
+            FSurname = TxtBoxFatherSN;
+            FNumber = TxtBoxFatherPN;
+            FCAdress = TxtBoxFatherCA;
+            P1Name = TxtBoxName1;
+            P2Name = TxtBoxName2;
+            P3Name = TxtBoxName3;
+            P4Name = TxtBoxName4;
+            P5Name = TxtBoxName5;
+            P1Date = TxtBoxDate1;
+            P2Date = TxtBoxDate2;
+            P3Date = TxtBoxDate3;
+            P4Date = TxtBoxDate4;
+            P5Date = TxtBoxDate5;
+            P1Time = TxtBoxTime1;
+            P2Time = TxtBoxTime2;
+            P3Time = TxtBoxTime3;
+            P4Time = TxtBoxTime4;
+            P5Time = TxtBoxTime5;
+            P1Loc = TxtBoxLoc1;
+            P2Loc = TxtBoxLoc2;
+            P3Loc = TxtBoxLoc3;
+            P4Loc = TxtBoxLoc4;
+            P5Loc = TxtBoxLoc5;
         }
 
         private void CTbtnSave_Click(object sender, EventArgs e)
